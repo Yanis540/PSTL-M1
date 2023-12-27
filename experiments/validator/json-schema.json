@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "birthday": { "type": "string","format": "date" },
+        "age": { "type": "integer" }, 
+        "regulation":{
+            "type":"object",
+            "properties":{
+
+                "name":{"type":"string"}, 
+                "role":{"type":"string"} 
+            }, 
+            "required":["role"]
+        }
+    }, 
+    "required":["name","regulation"]
+}
