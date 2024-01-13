@@ -1,6 +1,6 @@
 {
     "name":"yanis", 
-    
+    "featured" : ["hi", 123], 
     "regulation":{
         "name":"Yanis", 
         "role":"hi"
