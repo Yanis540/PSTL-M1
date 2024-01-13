@@ -3,7 +3,11 @@
     "properties": {
         "name": { "type": "string" },
         "birthday": { "type": "string","format": "date" },
-        "age": { "type": "integer" }, 
+        "age": { "type": "integer","maximum":10, "minimum" :0 }, 
+        "featured" : {
+            "type":"array", 
+            "items":{"type":"integer"}
+        },
         "regulation":{
             "type":"object",
             "properties":{
@@ -11,8 +15,8 @@
                 "name":{"type":"string"}, 
                 "role":{"type":"string"} 
             }, 
-            "required":["role"]
+            "required":["role","name"]
         }
     }, 
-    "required":["name","regulation"]
+    "required":["name","regulation", "featured","age"]
 }

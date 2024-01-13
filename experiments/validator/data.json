@@ -1,7 +1,8 @@
 {
-    "name":3, 
-
+    "name":"yanis", 
+    
     "regulation":{
-        
+        "name":"Yanis", 
+        "role":"hi"
     }
 }
