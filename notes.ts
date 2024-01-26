@@ -14,5 +14,8 @@
 ?       à vérifier : si JEDI fait les différences après il calcule les distances, ou bien il fait les distances en premier 
 
 
+!   Lire tt ce qui est json schema (sur les données fournit)
+!   Comprendre 
+
 
 */

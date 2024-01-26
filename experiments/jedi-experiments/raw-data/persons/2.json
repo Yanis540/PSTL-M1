@@ -1,0 +1,7 @@
+{
+    "peoples":[
+        {"name":"Yanis",  "age":22  }, 
+        {"name":"Salim", "last_name":22 },
+        {"name":"Hichem", "last_name":22 }
+    ]
+}
