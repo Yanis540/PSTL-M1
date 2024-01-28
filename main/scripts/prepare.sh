@@ -1,0 +1,1 @@
+python3 scripts/json2bracket.py -f $1.json  -s > $2.bracket
