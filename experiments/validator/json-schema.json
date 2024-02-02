@@ -1,22 +1,26 @@
 {
-    "type": "object",
-    "properties": {
-        "name": { "type": "string" },
-        "birthday": { "type": "string","format": "date" },
-        "age": { "type": "integer","maximum":10, "minimum" :0 }, 
-        "featured" : {
-            "type":"array", 
-            "items":{"type":"integer"}
-        },
-        "regulation":{
-            "type":"object",
-            "properties":{
 
-                "name":{"type":"string"}, 
-                "role":{"type":"string"} 
-            }, 
-            "required":["role","name"]
+    "anyOf": [
+        {
+            "type": "object",
+            "description": "Cool! We got a string here!",
+            "required":["a"],
+            "properties":{
+                "a":{
+                    "type":"object",
+                    "properties":{
+                        "b":{
+                            "type":"string"
+                        }
+                    },
+                    "required":["b"]
+                }
+            }
+        },
+        {
+            "type": "integer",
+            "description": "Hey! We got an integer here!"
         }
-    }, 
-    "required":["name","regulation", "featured","age"]
+    ]
+
 }

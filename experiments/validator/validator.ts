@@ -4,4 +4,6 @@ import myData from "./data.json";
 
 const jsonSchema: Draft = new Draft07(myJsonSchema);
 const errors: JsonError[] = jsonSchema.validate(myData);
-console.log(errors)
+errors.map((error)=>{
+    console.log(error)
+})
