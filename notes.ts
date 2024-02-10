@@ -18,4 +18,11 @@
 !   Comprendre 
 
 
+
+!   plotter la distribution des distacnces + enlever les outliers qui sont plus grand que la moyenne 
+!   threadshold d'erreur + regarder les moyennes 
+
+?   trouver des explcications entre distance d'édition entre 
+
+
 */
