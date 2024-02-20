@@ -51,9 +51,15 @@
 
 
 
+!   Codes : 
+todo        -   prendre des samples des schemas + instances non correct (une dizaine de schéma et une dizaine d'instance)
+todo        -   visualiser manuellement avec faker ou se situe la tendance des erreurs
+todo        -   essayer d'automatiser ça 
+todo        -   essayer de trouver des solutions basiques poru certaines violation de contraintes (type mismatch ....)
+todo        -   le gros soucis c'est l'opérateur :  not et allOf, y'a des techniques pour transferer un allOf en anyOf qui est plus simple à vérifier mais qui ne marche pas tt le temps 
 
-!   se restraindre au erreurs de type basique 
-
-!   classer par erreur de validation 
+!   Rédaction
+todo        -   écrire sur la distance d'édition, c'est quoi 
+todo        -   donner des exemples sur JEDI et comment la distance d'édition marche entre temps  
 
 */
