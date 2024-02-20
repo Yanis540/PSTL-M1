@@ -1,2 +1,13 @@
 */node_modules
 /experiments/json-everything/experiments-for-json-everything
+/rapport/*/*.aux
+*/*.aux
+/rapport/*.out
+/rapport/*.xml
+/rapport/*.fls
+/rapport/*.lof
+/rapport/*.toc
+/rapport/*.bbl
+/rapport/*.blg
+/rapport/*.fdb_latexmk
+/rapport/rapport-blx.bib

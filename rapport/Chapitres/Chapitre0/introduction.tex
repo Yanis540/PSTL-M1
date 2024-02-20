@@ -1,0 +1,150 @@
+\chapter{Etat de l'art}
+% \addcontentsline{toc}{chapter}{Introduction}
+
+
+    \section{JSON Schema}
+
+        Le JSON Schema \cite{JSON_Schema} est une norme permettant de décrire la structure et les contraintes des données au format JSON (JavaScript Object Notation). Il spécifie la manière dont les données JSON doivent être organisées, les types de données autorisés, les valeurs par défaut, etc.
+
+        \subsection{Utilité du JSON Schema}
+
+            \begin{enumerate}
+                \item \textbf{Validation des données :} Il permet de valider si une instance JSON est conforme à un schéma prédéfini, assurant ainsi la qualité et la cohérence des données.
+                
+                \item \textbf{Documentation :} En décrivant la structure des données attendues, le JSON Schema sert également de documentation explicite pour les utilisateurs et les développeurs.
+                
+                \item \textbf{Communication :} En partageant un schéma, différentes parties prenantes peuvent avoir une compréhension commune de la structure des données, facilitant ainsi l'échange d'informations.
+                
+                \item \textbf{Génération de données de test :} Il peut être utilisé pour générer des jeux de données de test conformes au schéma, ce qui est utile lors de la phase de développement et de tests.
+            \end{enumerate}
+
+        \subsection{Intégration avec les Objectifs du Projet}
+
+            Dans le cadre du projet, les objectifs visent la génération et la correction d'instances JSON conformes à un schéma initial, tout en minimisant les modifications nécessaires. 
+
+            \begin{enumerate}
+                \item \textbf{Validation initiale :} Les générateurs d'instances identifiés dans l'objectif 1 produisent des données JSON à partir des schémas. La première étape consiste à valider ces instances par rapport au JSON Schema, identifiant ainsi les non-conformités.
+                
+                \item \textbf{Réparation des instances :} L'objectif global du projet est de développer des approches de réparation permettant de minimiser les modifications nécessaires pour rendre une instance non conforme conforme au schéma initial.
+                
+                \item \textbf{Analyse des erreurs de validation :} L'objectif 4 consiste à étudier le lien entre les erreurs de validation, détectées à l'étape 1, et la distance d'édition entre les instances non conformes et l'instance valide. Cette analyse contribue à une compréhension approfondie des types d'erreurs et guide le processus de réparation.
+            \end{enumerate}
+
+    \section{La similarité des documents JSON}
+        La similarité des documents JSON est une mesure de la similarité entre deux documents JSON. Elle est généralement utilisée pour comparer des documents JSON qui représentent des objets ou des données similaires.
+        \subsection{Approches existantes}
+            Une des approches existantes pour calculer la similarité des documents JSON est :
+            \begin{itemize}
+                \item [\textbullet] \textbf{Approche top-down \cite{JSON_Similarity}:} 
+            Cet approche top-down pour un comparateur de similarité dans le contexte JSON consiste à examiner la similarité entre deux structures JSON en commençant par les éléments les plus généraux et en descendant progressivement vers les détails spécifiques. Cela implique une comparaison basée sur la hiérarchie des éléments plutôt que sur les valeurs individuelles. ensuite les valeurs des propriétés et des éléments des deux documents.
+            \end{itemize}
+        \subsection{Limitations :}
+            \begin{enumerate}
+                \item \textbf{La structure du document est ignorée :} les approches top-down ignorent la structure du document, ce qui peut conduire à des résultats inexacts.
+                \item \textbf{Aucune garantie de qualité n'est donnée :} les approches existantes ne fournissent généralement aucune garantie de qualité pour leurs résultats.
+            \end{enumerate}
+
+    \section{JEDI}
+        JEDI \cite{JEDI} est un algorithme de calcul de la similarité entre deux documents JSON. Il fonctionne en comparant les deux documents en tant qu'arbres. La similarité entre les deux documents 
+        est définie comme le nombre minimum d'opérations d'édition (Ajout, Suppression, Modification) nécessaires pour transformer un arbre en l'autre.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.6]{Photos/Tree.png}
+            \caption{Exemple de nombre d'opération de transformation\cite{JEDI}}
+
+        \end{figure}
+        \subsection{Représentation d'arbres Json}   
+            JEDI \cite{JEDI} introduit la notion \textbf{d'arbre Json} qui est une représentation arborescente d'un document où chaque valeur de l'arbre est représenté par un noeud, nous permettant ainsi d'exploiter 
+            certaines propriétés des arbres qui nous sera utile par la suite. La figure \ref{fig:transformation_json_en_arbre} est un exemple sur cette notion.
+            \begin{figure}[H]
+                \begin{subfigure}[H]{0.45\linewidth}
+                    \begin{verbatim}
+{
+  "title":"star",
+  "r.time": 125,
+  "cast": {
+    "Han": "Ford",
+    "Leia": "Fisher"
+  }
+}
+                    \end{verbatim}
+                \end{subfigure}
+                \begin{subfigure}[H]{0.05\linewidth}
+                    $\Longrightarrow$
+                \end{subfigure}
+                \begin{subfigure}[H]{0.45\linewidth}
+                    \begin{center}
+                        \includegraphics[scale=0.5]{Photos/tree_representation.png}
+                    \end{center} 
+                \end{subfigure}
+                \caption {Transformation d'un document json en arbre Json}
+                \label{fig:transformation_json_en_arbre}
+            \end{figure}
+
+        \subsection{Principe de calcul de similarités de JEDI}
+            A partir d'un \textbf{Treshold} \textbf{T} et des documents \textbf{$d_{q}$}, on veut extraire à partir d’une base de données \textbf{D} les documents \textbf{$d_{i}$} qui sont similaires ( \textbf{JEDI} (\textbf{$d_{q}$} ,\textbf{$d_{i}$}) < \textbf{T} ). La solution proposée est donc de complexité \textbf{O($n^{2}\times d \times \log(d)$)} avec \textbf{n} étant la taille de l'arbre et \textbf{d} le degré maximum de l'arbre. 
+        \subsubsection{QuickJedi}
+            L'algorithme JEDI est complexe et peut être lent pour traiter de grandes quantités de données. Pour réduire le temps de calcul, il est donc indisponsable de filtrer les documents avant de les comparer à l'aide de JEDI. Le filtrage consiste à sélectionner les documents les plus susceptibles d'être similaires à la requête. Une fois les documents filtrés, l'algorithme JEDI peut être utilisé pour calculer la similarité entre les documents candidats.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=\linewidth]{Photos/QuickJedi.PNG}
+                \caption{Explication de l'algorithme JEDI\cite{JEDI}}
+
+            \end{figure}
+        \subsection{Distance et Matrice d'édition}
+            \subsubsection{Distance d'édition}
+                Soit deux documents JSON \textbf{$D_{A}$} et \textbf{$D_{B}$}, La distance d'édition \textbf{TED\footnote{Tree Edition Distance\cite{JEDI}}} est réprésenté par la formule suivante :
+                \begin{equation}
+                    \textbf{TED}(\textbf{$D_{A}$}, \textbf{$D_{B}$}) = \textbf{Min(\{} NOP\textbf{\})} 
+                \end{equation}
+                \begin{itemize}
+                    \item [\textbullet] \textbf{NOP}: Etant le nombre d'opérations
+                \end{itemize}
+                Les opérations que JEDI utilise sont les suivantes : 
+                \begin{enumerate}
+                    \item \textbf{Insertion}
+                    \item \textbf{Suppresion}
+                    \item \textbf{Edition}
+                \end{enumerate}
+
+                \begin{itemize}
+                    \item [\textbullet] \underline{\textbf{Remarques :}}
+                    \begin{enumerate}
+                        \item Les operations se font sur les noeuds de l'arbre du document \textbf{$D_{A}$} pour le comparer avec l'arbre du document \textbf{$D_{B}$}.
+                        \item JEDI \textbf{ne permet pas de sauvegarder les opérations}, mais plutot calculer le nombre d'opération qu'il faut pour transformer un arbre en un autre.
+                    \end{enumerate}
+                \end{itemize}
+
+    \section{Validation d'un schema}
+
+
+        La \textbf{validation} du JSON Schema est un processus par lequel les données JSON sont vérifiées par rapport à un schéma JSON spécifié pour garantir leur \textbf{conformité aux règles} et aux contraintes définies dans ce schéma comme les règles de typage\cite{Validation}. Le JSON Schema fournit une méthode standardisée pour décrire la structure attendue des données JSON, y compris les types de données, les propriétés requises, les valeurs autorisées, les formats de données et les relations entre les différentes parties des données. \cite{FoundationOfJSONSchema}
+
+        Lorsqu'une validation JSON Schema est effectuée, les données JSON sont \textit{comparées} au schéma correspondant, et toute violation des règles spécifiées dans le schéma est \textit{détectée et signalée}. 
+
+
+        La validation d'un document par rapport au schéma est toujours en \textbf{PTIME} et peut être résolu en temps linéaire tant que le schéma n'utilise pas de \textit{uniqueItems}.
+
+            \subsection{validation d'un document en PTIME}
+            Nous traitons le document restriction par restriction, tout en vérifiant la conformité au sous-schéma correspondant dans S.
+            Le temps d’exécution est \textbf{linéaire} car la correspondance à chaque mot-clé du schéma JSON peut être vérifiée en temps linéaire (sauf pour les éléments uniques).
+            
+            \subsection{Validation d'un document en PTIME-hard}
+            On fait la même chose mais on vérifie aussi que les éléments d'un tableau \textit{J} sont uniques, d'abord en \textit{triant} le tableau J.
+
+            La preuve est par réduction du problème de la valeur du circuit monotone
+            \subsection*{Exemples de Grammaire JSON Schema}
+                
+                
+            \begin{itemize}
+                \item [\textbullet]\textbf{JSDoc :=} {(defs,)? JSch}
+                \item [\textbullet]\textbf{Defs :=}         "definitions :{string:{JSch}
+                    (,string : {JSch})*
+                }
+                \item [\textbullet]\textbf{JSch :=} strSch | numSch |intSch | objSch | arrSch | refSch | not | allOf | anyOf | enum
+                \item [\textbullet]\textbf{ not :=} "not": {JSch}
+            \end{itemize}
+            
+            
+

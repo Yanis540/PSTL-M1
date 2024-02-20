@@ -1,0 +1,14 @@
+\pagestyle{empty}
+\clearpage                       
+{                                % Enclosed in braces so that re-definition is temporary.
+    \pagestyle{empty}              % Removes numbers from middle pages.
+    \fancypagestyle{plain}         % Re-definition removes numbers from first page.
+    {
+        \fancyhf{}%                       % Clear all header and footer fields.
+        \renewcommand{\headrulewidth}{0pt}% Clear rules (remove these two lines if not desired).
+        \renewcommand{\footrulewidth}{0pt}%
+    }
+    \bibliographystyle{unsrt}
+    \bibliography{bibliographie}
+    \thispagestyle{empty}          % Removes numbers from last page.
+}
