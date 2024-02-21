@@ -30,6 +30,10 @@
                 \item \textbf{Analyse des erreurs de validation :} L'objectif 4 consiste à étudier le lien entre les erreurs de validation, détectées à l'étape 1, et la distance d'édition entre les instances non conformes et l'instance valide. Cette analyse contribue à une compréhension approfondie des types d'erreurs et guide le processus de réparation.
             \end{enumerate}
 
+    \section{Génération d'instances}
+        La génération d'instance pour un schéma json est une tâche complexe du à la forme non algébrique du JSON schema. 
+        Un langage est dit "algébrique" quand l'application et la séméntique de ses opérateurs dépéndent de la sémantique de leurs opérandes, pour json nous avons l'interaction syntaxique ainsi que sémantique.\cite{not_elimination}
+    
     \section{La similarité des documents JSON}
         La similarité des documents JSON est une mesure de la similarité entre deux documents JSON. Elle est généralement utilisée pour comparer des documents JSON qui représentent des objets ou des données similaires.
         \subsection{Approches existantes}
@@ -40,12 +44,12 @@
             \end{itemize}
         \subsection{Limitations :}
             \begin{enumerate}
-                \item \textbf{La structure du document est ignorée :} les approches top-down ignorent la structure du document, ce qui peut conduire à des résultats inexacts.
+                \item \textbf{La structure du document est ignorée :} les approches top-down ignorent la structure du document, ce qui peut conduire à des résultats inexacts car dans un document JSON, on retrouve des éléments ordonnées (\emph{array}), et non ordonnées (\emph{objects}).
                 \item \textbf{Aucune garantie de qualité n'est donnée :} les approches existantes ne fournissent généralement aucune garantie de qualité pour leurs résultats.
             \end{enumerate}
 
     \section{JEDI}
-        JEDI \cite{JEDI} est un algorithme de calcul de la similarité entre deux documents JSON. Il fonctionne en comparant les deux documents en tant qu'arbres. La similarité entre les deux documents 
+        JEDI \cite{JEDI} est un algorithme de calcul de la similarité entre deux documents JSON. Il fonctionne en comparant les deux documents en tant qu'arbres en prenant en compte la structure du document (\emph{ordonnée vs non ordonnée}). La similarité entre les deux documents 
         est définie comme le nombre minimum d'opérations d'édition (Ajout, Suppression, Modification) nécessaires pour transformer un arbre en l'autre.
         \begin{figure}[H]
             \centering
@@ -55,8 +59,8 @@
             \cite{JEDI}
 
         \end{figure}
-        \subsection{Représentation d'arbres Json}   
-            JEDI \cite{JEDI} introduit la notion \textbf{d'arbre Json} qui est une représentation arborescente d'un document où chaque valeur de l'arbre est représenté par un noeud, nous permettant ainsi d'exploiter 
+        \subsection{Représentation d'Arbres JSON}   
+            JEDI introduit la notion d'arbre JSON qui est une représentation arborescente d'un document où chaque valeur de l'arbre est représenté par un noeud, nous permettant ainsi d'exploiter 
             certaines propriétés des arbres qui nous sera utile par la suite. La figure \ref{fig:transformation_json_en_arbre} est un exemple sur cette notion.
             \begin{figure}[H]
                 \begin{subfigure}[H]{0.45\linewidth}
