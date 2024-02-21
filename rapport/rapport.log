@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.1)  20 FEB 2024 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.1)  21 FEB 2024 02:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -942,7 +942,7 @@ Package hyperref Info: Link coloring OFF on input line 162.
 \openout2 = `Chapitres/Chapitre0/page_garde.aux'.
 
  (Chapitres/Chapitre0/page_garde.tex
-<Logo.png, id=90, 1792.7778pt x 730.8906pt>
+<Logo.png, id=82, 1792.7778pt x 730.8906pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
 Package pdftex.def Info: Logo.png  used on input line 12.
@@ -1042,7 +1042,7 @@ l.28                 \item \textbf
 
 
 ]
-<Photos/Tree.png, id=156, 583.42969pt x 272.51813pt>
+<Photos/Tree.png, id=147, 583.42969pt x 272.51813pt>
 File: Photos/Tree.png Graphic file (type png)
 <use Photos/Tree.png>
 Package pdftex.def Info: Photos/Tree.png  used on input line 52.
@@ -1051,47 +1051,55 @@ Package pdftex.def Info: Photos/Tree.png  used on input line 52.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 ...\subsection{Représentation d'arbres Json}
+l.58 ...\subsection{Représentation d'arbres Json}
                                                    [2]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 61.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 63.
  (C:\Users\Aspire7\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Photos/tree_representation.png, id=170, 463.7325pt x 423.08063pt>
+<Photos/tree_representation.png, id=161, 463.7325pt x 423.08063pt>
 File: Photos/tree_representation.png Graphic file (type png)
 <use Photos/tree_representation.png>
-Package pdftex.def Info: Photos/tree_representation.png  used on input line 77.
+Package pdftex.def Info: Photos/tree_representation.png  used on input line 79.
 (pdftex.def)             Requested size: 231.86568pt x 211.5398pt.
 
-Overfull \hbox (25.8549pt too wide) in paragraph at lines 77--78
+Overfull \hbox (25.8549pt too wide) in paragraph at lines 79--80
  [] 
  []
 
 [3 <./Photos/Tree.png> <./Photos/tree_representation.png>]
-<Photos/QuickJedi.PNG, id=183, 983.92593pt x 246.1697pt>
-File: Photos/QuickJedi.PNG Graphic file (type png)
-<use Photos/QuickJedi.PNG>
-Package pdftex.def Info: Photos/QuickJedi.PNG  used on input line 91.
-(pdftex.def)             Requested size: 457.80486pt x 114.53908pt.
- [4 <./Photos/QuickJedi.PNG>]) [5]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 97.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 97.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 97.
+<Photos/tree_edit_matrix.PNG, id=173, 321.45094pt x 192.72pt>
+File: Photos/tree_edit_matrix.PNG Graphic file (type png)
+<use Photos/tree_edit_matrix.PNG>
+Package pdftex.def Info: Photos/tree_edit_matrix.PNG  used on input line 103.
+(pdftex.def)             Requested size: 160.72507pt x 96.35976pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 120.
+ (Chapitres/Chapitre0/edit_matrix.tex) [4 <./Photos/tree_edit_matrix.PNG>] [5]) [6]
 \openout2 = `Chapitres/Chapitre1/Chapitre1.aux'.
 
  (Chapitres/Chapitre1/Chapitre1.tex
 Chapitre 2.
-) [6
+) [7
 
 
 
 
-] [7]
+] [8]
 \openout2 = `Chapitres/Bibliographique/Bibliographique.aux'.
 
  (Chapitres/Bibliographique/Bibliographique.tex (rapport.bbl
-Underfull \hbox (badness 1859) in paragraph at lines 13--15
+Underfull \hbox (badness 1859) in paragraph at lines 8--10
 []\T1/lmr/m/n/12 Json si-mi-la-rity com-pa-ri-tor.  []$\T1/lmtt/m/n/12 https : / / github\OML/lmm/m/it/12 :\T1/lmtt/m/n/12 com / Geo3ngel / JSON -[] Similarity -[]
  []
 
-)) [8
+)) [9
 
 
 
@@ -1099,20 +1107,20 @@ Underfull \hbox (badness 1859) in paragraph at lines 13--15
 
 ] (rapport.aux (Chapitres/Chapitre0/page_garde.aux) (Chapitres/TablesContenus/tables.aux) (Chapitres/Chapitre0/introduction.aux) (Chapitres/Chapitre1/Chapitre1.aux) (Chapitres/Bibliographique/Bibliographique.aux))
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 8C858A298F29F6B44E5288D55AE92E3E;3799.
+(rerunfilecheck)             Checksum: 425BA2DDE2609F825BC88F5E9BBA42DF;3542.
  ) 
 Here is how much of TeX's memory you used:
- 33044 strings out of 476375
- 646089 string characters out of 5788032
- 1860299 words of memory out of 5000000
- 52714 multiletter control sequences out of 15000+600000
- 598964 words of font info for 84 fonts, out of 8000000 for 9000
+ 33066 strings out of 476375
+ 646584 string characters out of 5788032
+ 1867299 words of memory out of 5000000
+ 52735 multiletter control sequences out of 15000+600000
+ 605025 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,104p,717b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on rapport.pdf (11 pages, 586418 bytes).
+ 102i,11n,104p,717b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on rapport.pdf (12 pages, 562054 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 309 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

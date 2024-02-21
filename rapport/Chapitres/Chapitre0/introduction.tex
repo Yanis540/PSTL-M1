@@ -50,7 +50,9 @@
         \begin{figure}[H]
             \centering
             \includegraphics[scale=0.6]{Photos/Tree.png}
-            \caption{Exemple de nombre d'opération de transformation\cite{JEDI}}
+            \caption{Exemple de nombre d'opération de transformation}
+            \label{fig:tree}
+            \cite{JEDI}
 
         \end{figure}
         \subsection{Représentation d'arbres Json}   
@@ -81,40 +83,68 @@
                 \label{fig:transformation_json_en_arbre}
             \end{figure}
 
-        \subsection{Principe de calcul de similarités de JEDI}
-            A partir d'un \textbf{Treshold} \textbf{T} et des documents \textbf{$d_{q}$}, on veut extraire à partir d’une base de données \textbf{D} les documents \textbf{$d_{i}$} qui sont similaires ( \textbf{JEDI} (\textbf{$d_{q}$} ,\textbf{$d_{i}$}) < \textbf{T} ). La solution proposée est donc de complexité \textbf{O($n^{2}\times d \times \log(d)$)} avec \textbf{n} étant la taille de l'arbre et \textbf{d} le degré maximum de l'arbre. 
-        \subsubsection{QuickJedi}
-            L'algorithme JEDI est complexe et peut être lent pour traiter de grandes quantités de données. Pour réduire le temps de calcul, il est donc indisponsable de filtrer les documents avant de les comparer à l'aide de JEDI. Le filtrage consiste à sélectionner les documents les plus susceptibles d'être similaires à la requête. Une fois les documents filtrés, l'algorithme JEDI peut être utilisé pour calculer la similarité entre les documents candidats.
-
+        \subsection{Distance d'édition (Tree Edit Distance : TED)}
+            JEDI permet de calculer la \textbf{distance d'édition} entre \textbf{deux arbres JSON}. On définit \textbf{TED} comme étant le nombre d'opération minimale 
+            pour transformer un arbre \textbf{$T_1$} à l'arbre \textbf{$T_2$}. Ces opérations sont :  \emph{ajout, suppression, renomer un noeud} et qui représentent les opérations 
+            permettant le \textbf{Json Edit Mapping}, c'est à dire faire correspondre chaque noeud du premier arbre vers le deuxième soit : 
+            \begin{itemize}
+                \item [\textbullet] Suppression : Les noeuds de $T_1$ qui ne figurent pas dans $T_2$ sont supprimés
+                \item [\textbullet] Ajout : Les noeuds de $T_2$ qui ne figurent pas dans $T_1$ sont ajoutés
+                \item [\textbullet] Renommer : Les noeuds de $T_1$ qui figurent dans $T_2$ sont renommés
+            \end{itemize} 
+           
+            
+            Chaque opération est associé à un coût, sauf le cas de renommer le même noeud \footnote{ Le coût de renommer $v8$ en $w8$ est nulle \ref{fig:tree} car il s'agit du même noeud}
+        \subsection{Distance et Matrice d'édition}
+            Jedi permet de construire une matrice appelé \textbf{Matrice d'édition} qui sauvegarde la distance d'édition entre chaque noeuds de $T_1$ avec les noeuds de $T_2$, 
+            la figure suivante illustre la matrice de l'exemple précédent : 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=\linewidth]{Photos/QuickJedi.PNG}
-                \caption{Explication de l'algorithme JEDI\cite{JEDI}}
-
+                \includegraphics[scale=0.5]{Photos/tree_edit_matrix.PNG}
+                \caption{Matrice d'édition entre $T_1$ et $T_2$}
+                \label{fig:tree_edit_matrix}
             \end{figure}
-        \subsection{Distance et Matrice d'édition}
-            \subsubsection{Distance d'édition}
-                Soit deux documents JSON \textbf{$D_{A}$} et \textbf{$D_{B}$}, La distance d'édition \textbf{TED\footnote{Tree Edition Distance\cite{JEDI}}} est réprésenté par la formule suivante :
-                \begin{equation}
-                    \textbf{TED}(\textbf{$D_{A}$}, \textbf{$D_{B}$}) = \textbf{Min(\{} NOP\textbf{\})} 
-                \end{equation}
-                \begin{itemize}
-                    \item [\textbullet] \textbf{NOP}: Etant le nombre d'opérations
-                \end{itemize}
-                Les opérations que JEDI utilise sont les suivantes : 
-                \begin{enumerate}
-                    \item \textbf{Insertion}
-                    \item \textbf{Suppresion}
-                    \item \textbf{Edition}
-                \end{enumerate}
 
-                \begin{itemize}
-                    \item [\textbullet] \underline{\textbf{Remarques :}}
-                    \begin{enumerate}
-                        \item Les operations se font sur les noeuds de l'arbre du document \textbf{$D_{A}$} pour le comparer avec l'arbre du document \textbf{$D_{B}$}.
-                        \item JEDI \textbf{ne permet pas de sauvegarder les opérations}, mais plutot calculer le nombre d'opération qu'il faut pour transformer un arbre en un autre.
-                    \end{enumerate}
-                \end{itemize}
+            \textbf{\underline{Exemple }}: 
+            \begin{figure}[H]
+                \centering
+                \begin{subfigure}[H]{0.45\linewidth}
+                    \begin{verbatim}
+{
+    "tree":[
+        {"height" : 300},
+        {"width" : 20}
+    ]
+}
+                    \end{verbatim}
+                    \caption{Json $T_1$}
+                \end{subfigure}
+                \hfill
+                \begin{subfigure}[H]{0.45\linewidth}
+                    \centering
+                    \begin{verbatim}
+                        
+{
+    "tree":[
+        300,
+        20
+    ]
+}
+                    \end{verbatim}
+                    \caption{Json $T_2$}
+                \end{subfigure} 
+                
+            \end{figure}
+            \begin{figure}[H]\ContinuedFloat
+                \centering
+                \input{Chapitres/Chapitre0/edit_matrix.tex}
+                \caption{Matrice d'édition}
+            \end{figure}
+
+            \begin{remark}
+                Pour Jedi on ne sauvegarde pas les opérations qu'on fait mais plutôt le coût de modification.
+            \end{remark}
+            
 
     \section{Validation d'un schema}
 
