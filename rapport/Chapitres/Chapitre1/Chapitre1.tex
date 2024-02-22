@@ -1,14 +1,87 @@
 \chapter{Etude expérimentale}
-\section{Génération d'instance Valide}
-La génération d'instances JSON Schema vise à créer des ensembles de données valides à partir d'un schéma JSON défini. Ce processus est crucial pour divers cas d'utilisation, tels que la création de jeux de test, le remplissage de bases de données et l'exploration de l'espace de solutions défini par le schéma \cite{GENERATION}.
-\subsection{Bibliothèques existantes}
-\begin{itemize}
-    \item [\textbullet] \textbf{json-schema-faker (JSF):} pour une génération rapide et simple de données fictives\cite{faker}.
-    \item [\textbullet] \textbf{json-everything (JE):} écrite en C\#, est extension de \textbf{System.Text.Json}, limitée en termes d'expressivité sur la partie JSON\cite{everything}.
-    \item [\textbullet] \textbf{json-data-generator (JDG):} pour une prise en charge complète de JSON Schema Draft 7 et la génération de données aléatoires\cite{data_generator}.
-\end{itemize}
- 
-\section{Approche sur les générateurs}
-Notre approche consiste a faire un étude experimentale et trouver si possible, une relation entre le nombre d'erreur et la distance d'édition \textbf{TED}. La démarche est donc de prendre le \textbf{TED} de \textbf{JEDI} et de comparer la distance d'édition d'instance généré par rapport à des instances correctes déjà fournie dans un \textbf{dataset}, on calcule pour chaque générateur le nombre d'erreur de chaque instance ainsi que la taille de l'arbre, le résultat nous permettera donc de mieux comprendre comment procéder à notre réparation d'instance.
- \subsection{Résultats}
+  \section{Dataset} 
+    Le dataset a déjà été créé et comprend environ 6000 schémas. Cependant, tous les témoins n'ont pas été correctement générés, c'est pourquoi nous ne conservons que la moitié de ces schémas, soit un total de 3000 schémas.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.7]{Photos/ted_vs_errors/nb_instance_filtree.PNG}
+      \caption{Nombre d'instance par générateur}
+      \label{fig:nb_instance_filtree}
+    \end{figure}
+  \section{Génération d'instance Valide}
+    La génération d'instances JSON Schema vise à créer des ensembles de données valides à partir d'un schéma JSON défini. Ce processus 
+    est crucial pour divers cas d'utilisation, tels que la création de jeux de test, le remplissage de bases de données et l'exploration 
+    de l'espace de solutions défini par le schéma \cite{GENERATION}. Pour celà on dispose des schémas, ainsi que des instances correctes, et nous utilisons trois générateurs d'instance, ces instances seront appelé witness : 
+      \begin{itemize}
+          \item [\textbullet] \textbf{json-schema-faker (JSF):} pour une génération rapide et simple de données fictives\cite{faker}.
+          \item [\textbullet] \textbf{json-everything (JE):} écrite en C\#, est extension de \textbf{System.Text.Json}, limitée en termes d'expressivité sur la partie JSON\cite{everything}.
+          \item [\textbullet] \textbf{json-data-generator (DG):} pour une prise en charge complète de JSON Schema Draft 7 et la génération de données aléatoires\cite{data_generator}.
+      \end{itemize}
+
+    
+    Le dataset contenant les witness a été déjà construit précédemment, donc on mènera nos tests dessus
+      
+  \section{Distance d'édition et erreurs des instances}
+    Une première approche serait de voir si il existe un lien entre la distance d'édition et le nombre d'erreurs pour chaque witness, celà en calculant la distance d'édition 
+    entre chaque instance correct et les witness de chaque générateurs
+      \subsection{Distribution des tailles}
+        Pour cette partie on s'intéresse à la distribution des tailles des instances corrects ainsi que les witness. 
+        \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.7]{Photos/ted_vs_errors/distribution_tailles.PNG}
+        \end{figure}
+      \subsection{Distribution des distances d'édition}
+        On s'intéresse dans cette partie à savoir connaitre certaines statistiques concernant les distances d'édition pour chacun des générateurs 
+        \begin{figure}[H]
+          \begin{subfigure}[t]{\linewidth}
+            \includegraphics[scale=0.41]{Photos/ted_vs_errors/distribution_ted_dg.PNG}
+            \caption{Distrubtion TED DG}
+          \end{subfigure}
+         
+          \caption{Distribution des TED}
+          \label{fig:distribution_ted}
+        \end{figure}
+        \begin{figure}[H]\ContinuedFloat
+          \begin{subfigure}[t]{\linewidth}
+            \includegraphics[scale=0.41]{Photos/ted_vs_errors/distribution_ted_je.PNG}
+            \caption{Distrubtion TED JE} 
+          \end{subfigure}
+          \begin{subfigure}[t]{\linewidth}
+            \includegraphics[scale=0.41]{Photos/ted_vs_errors/distribution_ted_jsf.PNG}
+            \caption{Distrubtion TED JSF}
+          \end{subfigure}
+          \caption{Distribution des tailles des instances}
+          \label{fig:distribution_tailles}
+        \end{figure}
+
+      
+      \subsection{Relation entre distance d'édition et nombre d'erreurs}
+        On s'intéresse dans cette partie à savoir connaitre certaines statistiques concernant les distances d'édition pour chacun des générateurs 
+        \begin{figure}[H]
+            \includegraphics[scale=1]{Photos/ted_vs_errors/ted_vs_nb_errors.PNG}
+            \caption{Nombre d'erreurs et TED }
+          \label{fig:ted_vs_errors}
+        \end{figure}
+
+        On s'intéresse aussi à la relation entre la taille des witness par rapport à leurs TED (de l'instance correct) 
+        \begin{figure}[H]
+          \begin{subfigure}[t]{0.45\linewidth}
+            \includegraphics[scale=0.45]{Photos/ted_vs_errors/taille_vs_ted_dg.PNG}
+            \caption{Taille d'instances et TED (DG)}
+          \end{subfigure}
+          \hfill
+          \begin{subfigure}[t]{0.45\linewidth}
+            \includegraphics[scale=0.45]{Photos/ted_vs_errors/taille_vs_ted_je.PNG}
+            \caption{Taille d'instances et TED (JE)}
+          \end{subfigure}
+          
+          
+          \caption{Distribution des TED}
+          \label{fig:ted_vs_taille}
+        \end{figure}
+        \begin{figure}[H]\ContinuedFloat
+          \centering
+          \includegraphics[scale=0.5]{Photos/ted_vs_errors/taille_vs_ted_jSF.PNG}
+          \caption{Taille d'instances et TED (JSF)}
+        \end{figure}
+      
 

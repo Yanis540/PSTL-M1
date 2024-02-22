@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.1)  21 FEB 2024 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.1)  22 FEB 2024 02:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -942,7 +942,7 @@ Package hyperref Info: Link coloring OFF on input line 162.
 \openout2 = `Chapitres/Chapitre0/page_garde.aux'.
 
  (Chapitres/Chapitre0/page_garde.tex
-<Logo.png, id=86, 1792.7778pt x 730.8906pt>
+<Logo.png, id=94, 1792.7778pt x 730.8906pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
 Package pdftex.def Info: Logo.png  used on input line 12.
@@ -1042,7 +1042,7 @@ l.28                 \item \textbf
 
 
 ]
-<Photos/Tree.png, id=153, 583.42969pt x 272.51813pt>
+<Photos/Tree.png, id=175, 583.42969pt x 272.51813pt>
 File: Photos/Tree.png Graphic file (type png)
 <use Photos/Tree.png>
 Package pdftex.def Info: Photos/Tree.png  used on input line 56.
@@ -1057,7 +1057,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 67
  (C:\Users\Aspire7\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Photos/tree_representation.png, id=166, 463.7325pt x 423.08063pt>
+<Photos/tree_representation.png, id=188, 463.7325pt x 423.08063pt>
 File: Photos/tree_representation.png Graphic file (type png)
 <use Photos/tree_representation.png>
 Package pdftex.def Info: Photos/tree_representation.png  used on input line 83.
@@ -1074,7 +1074,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 101.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 101.
-<Photos/tree_edit_matrix.PNG, id=176, 321.45094pt x 192.72pt>
+<Photos/tree_edit_matrix.PNG, id=198, 321.45094pt x 192.72pt>
 File: Photos/tree_edit_matrix.PNG Graphic file (type png)
 <use Photos/tree_edit_matrix.PNG>
 Package pdftex.def Info: Photos/tree_edit_matrix.PNG  used on input line 107.
@@ -1087,15 +1087,64 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  (Chapitres/Chapitre1/Chapitre1.tex
 Chapitre 2.
-) [7
+<Photos/ted_vs_errors/nb_instance_filtree.PNG, id=227, 432.86719pt x 364.36125pt>
+File: Photos/ted_vs_errors/nb_instance_filtree.PNG Graphic file (type png)
+<use Photos/ted_vs_errors/nb_instance_filtree.PNG>
+Package pdftex.def Info: Photos/ted_vs_errors/nb_instance_filtree.PNG  used on input line 6.
+(pdftex.def)             Requested size: 303.00496pt x 255.05113pt.
+[7
 
 
 
 
-] [8]
+ <./Photos/ted_vs_errors/nb_instance_filtree.PNG>]
+<Photos/ted_vs_errors/distribution_tailles.PNG, id=237, 468.24937pt x 347.79938pt>
+File: Photos/ted_vs_errors/distribution_tailles.PNG Graphic file (type png)
+<use Photos/ted_vs_errors/distribution_tailles.PNG>
+Package pdftex.def Info: Photos/ted_vs_errors/distribution_tailles.PNG  used on input line 30.
+(pdftex.def)             Requested size: 327.77231pt x 243.4579pt.
+ [8]
+<Photos/ted_vs_errors/distribution_ted_dg.PNG, id=246, 1103.62312pt x 368.87813pt>
+File: Photos/ted_vs_errors/distribution_ted_dg.PNG Graphic file (type png)
+<use Photos/ted_vs_errors/distribution_ted_dg.PNG>
+Package pdftex.def Info: Photos/ted_vs_errors/distribution_ted_dg.PNG  used on input line 36.
+(pdftex.def)             Requested size: 452.48842pt x 151.241pt.
+<Photos/ted_vs_errors/distribution_ted_je.PNG, id=247, 1112.65688pt x 373.395pt>
+File: Photos/ted_vs_errors/distribution_ted_je.PNG Graphic file (type png)
+<use Photos/ted_vs_errors/distribution_ted_je.PNG>
+Package pdftex.def Info: Photos/ted_vs_errors/distribution_ted_je.PNG  used on input line 45.
+(pdftex.def)             Requested size: 456.19228pt x 153.09294pt.
+<Photos/ted_vs_errors/distribution_ted_jsf.PNG, id=248, 1108.14pt x 374.14781pt>
+File: Photos/ted_vs_errors/distribution_ted_jsf.PNG Graphic file (type png)
+<use Photos/ted_vs_errors/distribution_ted_jsf.PNG>
+Package pdftex.def Info: Photos/ted_vs_errors/distribution_ted_jsf.PNG  used on input line 49.
+(pdftex.def)             Requested size: 454.34035pt x 153.40158pt.
+ [9 <./Photos/ted_vs_errors/distribution_tailles.PNG> <./Photos/ted_vs_errors/distribution_ted_dg.PNG>]
+<Photos/ted_vs_errors/ted_vs_nb_errors.PNG, id=256, 427.5975pt x 341.77687pt>
+File: Photos/ted_vs_errors/ted_vs_nb_errors.PNG Graphic file (type png)
+<use Photos/ted_vs_errors/ted_vs_nb_errors.PNG>
+Package pdftex.def Info: Photos/ted_vs_errors/ted_vs_nb_errors.PNG  used on input line 60.
+(pdftex.def)             Requested size: 427.59645pt x 341.77603pt.
+ [10 <./Photos/ted_vs_errors/distribution_ted_je.PNG> <./Photos/ted_vs_errors/distribution_ted_jsf.PNG>]
+<Photos/ted_vs_errors/taille_vs_ted_dg.PNG, id=264, 434.37282pt x 331.99031pt>
+File: Photos/ted_vs_errors/taille_vs_ted_dg.PNG Graphic file (type png)
+<use Photos/ted_vs_errors/taille_vs_ted_dg.PNG>
+Package pdftex.def Info: Photos/ted_vs_errors/taille_vs_ted_dg.PNG  used on input line 68.
+(pdftex.def)             Requested size: 195.46596pt x 149.39424pt.
+<Photos/ted_vs_errors/taille_vs_ted_je.PNG, id=265, 437.38406pt x 333.49594pt>
+File: Photos/ted_vs_errors/taille_vs_ted_je.PNG Graphic file (type png)
+<use Photos/ted_vs_errors/taille_vs_ted_je.PNG>
+Package pdftex.def Info: Photos/ted_vs_errors/taille_vs_ted_je.PNG  used on input line 73.
+(pdftex.def)             Requested size: 196.821pt x 150.07178pt.
+<Photos/ted_vs_errors/taille_vs_ted_jSF.PNG, id=266, 440.39531pt x 335.00156pt>
+File: Photos/ted_vs_errors/taille_vs_ted_jSF.PNG Graphic file (type png)
+<use Photos/ted_vs_errors/taille_vs_ted_jSF.PNG>
+Package pdftex.def Info: Photos/ted_vs_errors/taille_vs_ted_jSF.PNG  used on input line 83.
+(pdftex.def)             Requested size: 220.19711pt x 167.50037pt.
+ [11 <./Photos/ted_vs_errors/ted_vs_nb_errors.PNG> <./Photos/ted_vs_errors/taille_vs_ted_dg.PNG> <./Photos/ted_vs_errors/taille_vs_ted_je.PNG>]) [12 <./Photos/ted_vs_errors/taille_vs_ted_jSF.PNG>]
 \openout2 = `Chapitres/Bibliographique/Bibliographique.aux'.
 
- (Chapitres/Bibliographique/Bibliographique.tex (rapport.bbl)) [9
+ (Chapitres/Bibliographique/Bibliographique.tex (rapport.bbl)) [13
 
 
 
@@ -1103,20 +1152,20 @@ Chapitre 2.
 
 ] (rapport.aux (Chapitres/Chapitre0/page_garde.aux) (Chapitres/TablesContenus/tables.aux) (Chapitres/Chapitre0/introduction.aux) (Chapitres/Chapitre1/Chapitre1.aux) (Chapitres/Bibliographique/Bibliographique.aux))
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 232AB3B4ACBECD211CEEC94A5702D166;3715.
+(rerunfilecheck)             Checksum: 2789CDEA1FC3C8BC4926A1B1D2C0DDAE;4373.
  ) 
 Here is how much of TeX's memory you used:
- 33074 strings out of 476375
- 646695 string characters out of 5788032
+ 33158 strings out of 476375
+ 649831 string characters out of 5788032
  1869299 words of memory out of 5000000
- 52741 multiletter control sequences out of 15000+600000
+ 52802 multiletter control sequences out of 15000+600000
  605025 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,104p,717b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on rapport.pdf (12 pages, 564348 bytes).
+Output written on rapport.pdf (16 pages, 791806 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
