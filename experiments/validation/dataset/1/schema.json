@@ -1,0 +1,31 @@
+{
+    "required":["name"],
+    "properties":{
+        "name":{
+            "anyOf": [
+                {
+                    "type": "object",
+                    "description": "Cool! We got a string here!",
+                    "required":["a"],
+                    "properties":{
+                        "a":{
+                            "type":"object",
+                            "properties":{
+                                "b":{
+                                    "type":"string"
+                                }
+                            },
+                            "required":["b"]
+                        }
+                    }
+                },
+                {
+                    "type": "integer"
+                }
+            ]
+        }
+    }
+    
+
+
+}

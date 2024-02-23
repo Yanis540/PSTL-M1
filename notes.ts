@@ -49,17 +49,21 @@
 
 ?   trouver des explcications entre distance d'édition entre 
 
+!   Rédaction
+?           -   écrire sur la distance d'édition, c'est quoi 
+?           -   donner des exemples sur JEDI et comment la distance d'édition marche entre temps  
 
 
 !   Codes : 
-todo        -   prendre des samples des schemas + instances non correct (une dizaine de schéma et une dizaine d'instance)
+?           -   prendre des samples des schemas + instances non correct (une dizaine de schéma et une dizaine d'instance)
+*           Notes : 
+?               -   anyOf : ne précise pas ou est situer l'erreur juste qu'il y'a bien une erreur (pas de TypeError juste qu'il y a une erreur sur la branche)
+?               -   Not : précise ou est situer l'erreur  (TypeError)
+?               -   allOf : précise ou est situer l'erreur  (TypeError)
 todo        -   visualiser manuellement avec faker ou se situe la tendance des erreurs
 todo        -   essayer d'automatiser ça 
 todo        -   essayer de trouver des solutions basiques poru certaines violation de contraintes (type mismatch ....)
 todo        -   le gros soucis c'est l'opérateur :  not et allOf, y'a des techniques pour transferer un allOf en anyOf qui est plus simple à vérifier mais qui ne marche pas tt le temps 
 
-!   Rédaction
-todo        -   écrire sur la distance d'édition, c'est quoi 
-todo        -   donner des exemples sur JEDI et comment la distance d'édition marche entre temps  
 
 */

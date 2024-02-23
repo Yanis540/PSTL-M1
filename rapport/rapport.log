@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.1)  22 FEB 2024 02:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.1)  23 FEB 2024 01:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1152,18 +1152,18 @@ Package pdftex.def Info: Photos/ted_vs_errors/taille_vs_ted_jSF.PNG  used on inp
 
 ] (rapport.aux (Chapitres/Chapitre0/page_garde.aux) (Chapitres/TablesContenus/tables.aux) (Chapitres/Chapitre0/introduction.aux) (Chapitres/Chapitre1/Chapitre1.aux) (Chapitres/Bibliographique/Bibliographique.aux))
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 2FBE8ABFDDED465004C9A114FE60DB67;4605.
+(rerunfilecheck)             Checksum: ECDD1E3261362B43E0A3ED4AFECC66C7;4681.
  ) 
 Here is how much of TeX's memory you used:
  33162 strings out of 476375
  649899 string characters out of 5788032
- 1868299 words of memory out of 5000000
+ 1869299 words of memory out of 5000000
  52804 multiletter control sequences out of 15000+600000
  605025 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,104p,717b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Aspire7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on rapport.pdf (16 pages, 793936 bytes).
+Output written on rapport.pdf (16 pages, 794004 bytes).
 PDF statistics:
  387 PDF objects out of 1000 (max. 8388607)
  75 named destinations out of 1000 (max. 500000)
