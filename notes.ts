@@ -66,4 +66,15 @@ todo        -   essayer de trouver des solutions basiques poru certaines violati
 todo        -   le gros soucis c'est l'opérateur :  not et allOf, y'a des techniques pour transferer un allOf en anyOf qui est plus simple à vérifier mais qui ne marche pas tt le temps 
 
 
+
+
+!   Raport : 
+?           -   Introduction 
+?           -   Châpitre 1.5 ==> 1.2 
+?           -   Validation d'un schéma => validation d'instance par rapport à un schéma  
+?           -       Donner un exemple sur la validation : un schéma une instance valide + non valide +  
+?           -   Chapitre 2.2 déplacer au chapitre 1 pour la génération 
+
+?           -   Chapitre 2.1 : mettre les résultats de l'année dernière sur les trois générateurs, dire qu'on a les schémas, 
+
 */
