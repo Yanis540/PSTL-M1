@@ -1,0 +1,23 @@
+{
+  "valid": false,
+  "instanceLocation": "",
+  "keywordLocation": "",
+  "absoluteKeywordLocation": "https://jschon.dev/demo#",
+  "errors": [
+    {
+      "valid": false,
+      "instanceLocation": "",
+      "keywordLocation": "/not",
+      "absoluteKeywordLocation": "https://jschon.dev/demo#/not",
+      "error": "The instance must not be valid against the subschema",
+      "errors": [
+        {
+          "valid": true,
+          "instanceLocation": "",
+          "keywordLocation": "/not/type",
+          "absoluteKeywordLocation": "https://jschon.dev/demo#/not/type"
+        }
+      ]
+    }
+  ]
+}
