@@ -11,6 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "json-schema-faker": "^0.5.4",
-    "json-schema-library": "^9.1.2"
+    "json-schema-library": "^9.1.2",
+    "json-schema-migrate": "^2.0.0",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20"
   }
 }

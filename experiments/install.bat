@@ -23,3 +23,5 @@ git clone https://github.com/Microsoft/vcpkg.git vcpkg
 .\vcpkg integrate install
 : go to env variables > path > add and add this : C:\dev\vcpkg
 : run this vcpkg install tree-similarity 
+npm install json-schema-migrate
+npm i --save-dev @types/node
