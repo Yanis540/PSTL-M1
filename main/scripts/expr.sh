@@ -1,1 +1,1 @@
-./ted.exe file $1 $2
+./scripts/ted.exe file $1 $2
