@@ -2,38 +2,41 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "https://jschon.dev/demo#",
+  "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#",
   "errors": [
     {
       "valid": true,
       "instanceLocation": "",
       "keywordLocation": "/type",
-      "absoluteKeywordLocation": "https://jschon.dev/demo#/type"
+      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/type"
     },
     {
       "valid": true,
       "instanceLocation": "",
       "keywordLocation": "/properties",
-      "absoluteKeywordLocation": "https://jschon.dev/demo#/properties",
-      "annotation": ["email", "phone"],
+      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties",
+      "annotation": [
+        "email",
+        "phone"
+      ],
       "annotations": [
         {
           "valid": true,
           "instanceLocation": "/email",
           "keywordLocation": "/properties/email",
-          "absoluteKeywordLocation": "https://jschon.dev/demo#/properties/email",
+          "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/email",
           "annotations": [
             {
               "valid": true,
               "instanceLocation": "/email",
               "keywordLocation": "/properties/email/type",
-              "absoluteKeywordLocation": "https://jschon.dev/demo#/properties/email/type"
+              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/email/type"
             },
             {
               "valid": true,
               "instanceLocation": "/email",
               "keywordLocation": "/properties/email/format",
-              "absoluteKeywordLocation": "https://jschon.dev/demo#/properties/email/format",
+              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/email/format",
               "annotation": "email"
             }
           ]
@@ -42,19 +45,19 @@
           "valid": true,
           "instanceLocation": "/phone",
           "keywordLocation": "/properties/phone",
-          "absoluteKeywordLocation": "https://jschon.dev/demo#/properties/phone",
+          "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/phone",
           "annotations": [
             {
               "valid": true,
               "instanceLocation": "/phone",
               "keywordLocation": "/properties/phone/type",
-              "absoluteKeywordLocation": "https://jschon.dev/demo#/properties/phone/type"
+              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/phone/type"
             },
             {
               "valid": true,
               "instanceLocation": "/phone",
               "keywordLocation": "/properties/phone/pattern",
-              "absoluteKeywordLocation": "https://jschon.dev/demo#/properties/phone/pattern"
+              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/phone/pattern"
             }
           ]
         }
@@ -64,27 +67,27 @@
       "valid": false,
       "instanceLocation": "",
       "keywordLocation": "/allOf",
-      "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf",
+      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf",
       "error": "The instance is invalid against subschemas [0]",
       "errors": [
         {
           "valid": false,
           "instanceLocation": "",
           "keywordLocation": "/allOf/0",
-          "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf/0",
+          "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/0",
           "errors": [
             {
               "valid": false,
               "instanceLocation": "",
               "keywordLocation": "/allOf/0/not",
-              "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf/0/not",
+              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/0/not",
               "error": "The instance must not be valid against the subschema",
               "errors": [
                 {
                   "valid": true,
                   "instanceLocation": "",
                   "keywordLocation": "/allOf/0/not/required",
-                  "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf/0/not/required"
+                  "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/0/not/required"
                 }
               ]
             }
@@ -94,25 +97,25 @@
           "valid": true,
           "instanceLocation": "",
           "keywordLocation": "/allOf/1",
-          "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf/1",
+          "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1",
           "annotations": [
             {
               "valid": true,
               "instanceLocation": "",
               "keywordLocation": "/allOf/1/anyOf",
-              "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf/1/anyOf",
+              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf",
               "annotations": [
                 {
                   "valid": true,
                   "instanceLocation": "",
                   "keywordLocation": "/allOf/1/anyOf/0",
-                  "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf/1/anyOf/0",
+                  "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf/0",
                   "annotations": [
                     {
                       "valid": true,
                       "instanceLocation": "",
                       "keywordLocation": "/allOf/1/anyOf/0/required",
-                      "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf/1/anyOf/0/required"
+                      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf/0/required"
                     }
                   ]
                 },
@@ -120,13 +123,13 @@
                   "valid": true,
                   "instanceLocation": "",
                   "keywordLocation": "/allOf/1/anyOf/1",
-                  "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf/1/anyOf/1",
+                  "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf/1",
                   "annotations": [
                     {
                       "valid": true,
                       "instanceLocation": "",
                       "keywordLocation": "/allOf/1/anyOf/1/required",
-                      "absoluteKeywordLocation": "https://jschon.dev/demo#/allOf/1/anyOf/1/required"
+                      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf/1/required"
                     }
                   ]
                 }
@@ -136,5 +139,8 @@
         }
       ]
     }
+  ],
+  "total_errors": [
+    "required"
   ]
 }

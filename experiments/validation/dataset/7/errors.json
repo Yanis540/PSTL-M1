@@ -2,22 +2,25 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "https://jschon.dev/demo#",
+  "absoluteKeywordLocation": "urn:uuid:dbd02ee4-6ae9-4d99-ae95-ca837cf9ae8a#",
   "errors": [
     {
       "valid": false,
       "instanceLocation": "",
       "keywordLocation": "/not",
-      "absoluteKeywordLocation": "https://jschon.dev/demo#/not",
+      "absoluteKeywordLocation": "urn:uuid:dbd02ee4-6ae9-4d99-ae95-ca837cf9ae8a#/not",
       "error": "The instance must not be valid against the subschema",
       "errors": [
         {
           "valid": true,
           "instanceLocation": "",
           "keywordLocation": "/not/type",
-          "absoluteKeywordLocation": "https://jschon.dev/demo#/not/type"
+          "absoluteKeywordLocation": "urn:uuid:dbd02ee4-6ae9-4d99-ae95-ca837cf9ae8a#/not/type"
         }
       ]
     }
+  ],
+  "total_errors": [
+    "type"
   ]
 }

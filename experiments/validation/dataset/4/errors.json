@@ -1,0 +1,123 @@
+{
+  "valid": true,
+  "instanceLocation": "",
+  "keywordLocation": "",
+  "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#",
+  "annotations": [
+    {
+      "valid": true,
+      "instanceLocation": "",
+      "keywordLocation": "/type",
+      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/type"
+    },
+    {
+      "valid": true,
+      "instanceLocation": "",
+      "keywordLocation": "/properties",
+      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/properties",
+      "annotation": [
+        "email"
+      ],
+      "annotations": [
+        {
+          "valid": true,
+          "instanceLocation": "/email",
+          "keywordLocation": "/properties/email",
+          "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/properties/email",
+          "annotations": [
+            {
+              "valid": true,
+              "instanceLocation": "/email",
+              "keywordLocation": "/properties/email/type",
+              "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/properties/email/type"
+            },
+            {
+              "valid": true,
+              "instanceLocation": "/email",
+              "keywordLocation": "/properties/email/format",
+              "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/properties/email/format",
+              "annotation": "email"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "valid": true,
+      "instanceLocation": "",
+      "keywordLocation": "/allOf",
+      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf",
+      "annotations": [
+        {
+          "valid": true,
+          "instanceLocation": "",
+          "keywordLocation": "/allOf/0",
+          "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/0",
+          "annotations": [
+            {
+              "valid": true,
+              "instanceLocation": "",
+              "keywordLocation": "/allOf/0/not",
+              "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/0/not",
+              "annotations": [
+                {
+                  "valid": false,
+                  "instanceLocation": "",
+                  "keywordLocation": "/allOf/0/not/required",
+                  "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/0/not/required",
+                  "error": "The object is missing required properties ['phone']"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "valid": true,
+          "instanceLocation": "",
+          "keywordLocation": "/allOf/1",
+          "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1",
+          "annotations": [
+            {
+              "valid": true,
+              "instanceLocation": "",
+              "keywordLocation": "/allOf/1/anyOf",
+              "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf",
+              "annotations": [
+                {
+                  "valid": true,
+                  "instanceLocation": "",
+                  "keywordLocation": "/allOf/1/anyOf/0",
+                  "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf/0",
+                  "annotations": [
+                    {
+                      "valid": true,
+                      "instanceLocation": "",
+                      "keywordLocation": "/allOf/1/anyOf/0/required",
+                      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf/0/required"
+                    }
+                  ]
+                },
+                {
+                  "valid": false,
+                  "instanceLocation": "",
+                  "keywordLocation": "/allOf/1/anyOf/1",
+                  "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf/1",
+                  "errors": [
+                    {
+                      "valid": false,
+                      "instanceLocation": "",
+                      "keywordLocation": "/allOf/1/anyOf/1/required",
+                      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf/1/required",
+                      "error": "The object is missing required properties ['phone']"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "total_errors": []
+}

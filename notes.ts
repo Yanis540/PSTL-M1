@@ -77,4 +77,12 @@ todo        -   le gros soucis c'est l'opérateur :  not et allOf, y'a des techn
 
 ?           -   Chapitre 2.1 : mettre les résultats de l'année dernière sur les trois générateurs, dire qu'on a les schémas, 
 
+
+
+
+!   Introduire la notion d'erreur : 
+?       -   pour chaque opérateur dire quelles sont les erreurs possibles 
+?           dire qu'on se base sur l'algorithme de fixing inspiré par l'erreur 
+?           
+
 */
