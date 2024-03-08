@@ -1,0 +1,35 @@
+{
+  "required": [
+    "name"
+  ],
+  "properties": {
+    "name": {
+      "anyOf": [
+        {
+          "type": "object",
+          "description": "Cool! We got a string here!",
+          "required": [
+            "a"
+          ],
+          "properties": {
+            "a": {
+              "type": "object",
+              "properties": {
+                "b": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "b"
+              ]
+            }
+          }
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2019-09/schema"
+}

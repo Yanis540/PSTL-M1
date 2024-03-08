@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "phone": {
+      "type": "string",
+      "pattern": "^\\d{10}$"
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "required": [
+          "email",
+          "phone"
+        ]
+      }
+    },
+    {
+      "anyOf": [
+        {
+          "required": [
+            "email"
+          ]
+        },
+        {
+          "required": [
+            "phone"
+          ]
+        }
+      ]
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2019-09/schema"
+}
