@@ -2,145 +2,16 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#",
+  "absoluteKeywordLocation": "urn:uuid:53099ad6-9741-4674-92c6-692cee1d0bcb#",
   "errors": [
     {
-      "valid": true,
       "instanceLocation": "",
-      "keywordLocation": "/type",
-      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/type"
-    },
-    {
-      "valid": true,
-      "instanceLocation": "",
-      "keywordLocation": "/properties",
-      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties",
-      "annotation": [
-        "email",
-        "phone"
-      ],
-      "annotations": [
-        {
-          "valid": true,
-          "instanceLocation": "/email",
-          "keywordLocation": "/properties/email",
-          "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/email",
-          "annotations": [
-            {
-              "valid": true,
-              "instanceLocation": "/email",
-              "keywordLocation": "/properties/email/type",
-              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/email/type"
-            },
-            {
-              "valid": true,
-              "instanceLocation": "/email",
-              "keywordLocation": "/properties/email/format",
-              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/email/format",
-              "annotation": "email"
-            }
-          ]
-        },
-        {
-          "valid": true,
-          "instanceLocation": "/phone",
-          "keywordLocation": "/properties/phone",
-          "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/phone",
-          "annotations": [
-            {
-              "valid": true,
-              "instanceLocation": "/phone",
-              "keywordLocation": "/properties/phone/type",
-              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/phone/type"
-            },
-            {
-              "valid": true,
-              "instanceLocation": "/phone",
-              "keywordLocation": "/properties/phone/pattern",
-              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/properties/phone/pattern"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "valid": false,
-      "instanceLocation": "",
-      "keywordLocation": "/allOf",
-      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf",
-      "error": "The instance is invalid against subschemas [0]",
-      "errors": [
-        {
-          "valid": false,
-          "instanceLocation": "",
-          "keywordLocation": "/allOf/0",
-          "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/0",
-          "errors": [
-            {
-              "valid": false,
-              "instanceLocation": "",
-              "keywordLocation": "/allOf/0/not",
-              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/0/not",
-              "error": "The instance must not be valid against the subschema",
-              "errors": [
-                {
-                  "valid": true,
-                  "instanceLocation": "",
-                  "keywordLocation": "/allOf/0/not/required",
-                  "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/0/not/required"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "valid": true,
-          "instanceLocation": "",
-          "keywordLocation": "/allOf/1",
-          "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1",
-          "annotations": [
-            {
-              "valid": true,
-              "instanceLocation": "",
-              "keywordLocation": "/allOf/1/anyOf",
-              "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf",
-              "annotations": [
-                {
-                  "valid": true,
-                  "instanceLocation": "",
-                  "keywordLocation": "/allOf/1/anyOf/0",
-                  "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf/0",
-                  "annotations": [
-                    {
-                      "valid": true,
-                      "instanceLocation": "",
-                      "keywordLocation": "/allOf/1/anyOf/0/required",
-                      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf/0/required"
-                    }
-                  ]
-                },
-                {
-                  "valid": true,
-                  "instanceLocation": "",
-                  "keywordLocation": "/allOf/1/anyOf/1",
-                  "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf/1",
-                  "annotations": [
-                    {
-                      "valid": true,
-                      "instanceLocation": "",
-                      "keywordLocation": "/allOf/1/anyOf/1/required",
-                      "absoluteKeywordLocation": "urn:uuid:ed4eeb3d-d066-42a7-9134-2eccd20a2ccd#/allOf/1/anyOf/1/required"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "keywordLocation": "/allOf/0/not",
+      "absoluteKeywordLocation": "urn:uuid:53099ad6-9741-4674-92c6-692cee1d0bcb#/allOf/0/not",
+      "error": "The instance must not be valid against the subschema"
     }
   ],
   "total_errors": [
-    "required"
+    "not"
   ]
 }

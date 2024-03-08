@@ -2,162 +2,37 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#",
+  "absoluteKeywordLocation": "urn:uuid:61278bef-43b5-434c-b432-d4ee300e059d#",
   "errors": [
     {
-      "valid": true,
-      "instanceLocation": "",
-      "keywordLocation": "/required",
-      "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/required"
-    },
-    {
-      "valid": false,
-      "instanceLocation": "",
-      "keywordLocation": "/properties",
-      "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties",
-      "error": "Properties ['something'] are invalid",
+      "instanceLocation": "/something/name",
+      "keywordLocation": "/properties/something/properties/name/anyOf",
+      "absoluteKeywordLocation": "urn:uuid:61278bef-43b5-434c-b432-d4ee300e059d#/properties/something/properties/name/anyOf",
       "errors": [
         {
-          "valid": false,
-          "instanceLocation": "/something",
-          "keywordLocation": "/properties/something",
-          "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something",
+          "instanceLocation": "/something/name/a",
+          "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a",
+          "absoluteKeywordLocation": "urn:uuid:61278bef-43b5-434c-b432-d4ee300e059d#/properties/something/properties/name/anyOf/0/properties/a",
           "errors": [
             {
-              "valid": true,
-              "instanceLocation": "/something",
-              "keywordLocation": "/properties/something/required",
-              "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/required"
+              "instanceLocation": "/something/name/a/b",
+              "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/properties/b/type",
+              "absoluteKeywordLocation": "urn:uuid:61278bef-43b5-434c-b432-d4ee300e059d#/properties/something/properties/name/anyOf/0/properties/a/properties/b/type",
+              "error": "The instance must be of type \"string\""
             },
             {
-              "valid": false,
-              "instanceLocation": "/something",
-              "keywordLocation": "/properties/something/properties",
-              "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties",
-              "error": "Properties ['name'] are invalid",
-              "errors": [
-                {
-                  "valid": false,
-                  "instanceLocation": "/something/name",
-                  "keywordLocation": "/properties/something/properties/name",
-                  "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name",
-                  "errors": [
-                    {
-                      "valid": false,
-                      "instanceLocation": "/something/name",
-                      "keywordLocation": "/properties/something/properties/name/anyOf",
-                      "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf",
-                      "error": "The instance must be valid against at least one subschema",
-                      "errors": [
-                        {
-                          "valid": false,
-                          "instanceLocation": "/something/name",
-                          "keywordLocation": "/properties/something/properties/name/anyOf/0",
-                          "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0",
-                          "errors": [
-                            {
-                              "valid": true,
-                              "instanceLocation": "/something/name",
-                              "keywordLocation": "/properties/something/properties/name/anyOf/0/type",
-                              "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/type"
-                            },
-                            {
-                              "valid": true,
-                              "instanceLocation": "/something/name",
-                              "keywordLocation": "/properties/something/properties/name/anyOf/0/description",
-                              "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/description",
-                              "annotation": "Cool! We got a string here!"
-                            },
-                            {
-                              "valid": true,
-                              "instanceLocation": "/something/name",
-                              "keywordLocation": "/properties/something/properties/name/anyOf/0/required",
-                              "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/required"
-                            },
-                            {
-                              "valid": false,
-                              "instanceLocation": "/something/name",
-                              "keywordLocation": "/properties/something/properties/name/anyOf/0/properties",
-                              "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/properties",
-                              "error": "Properties ['a'] are invalid",
-                              "errors": [
-                                {
-                                  "valid": false,
-                                  "instanceLocation": "/something/name/a",
-                                  "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a",
-                                  "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/properties/a",
-                                  "errors": [
-                                    {
-                                      "valid": true,
-                                      "instanceLocation": "/something/name/a",
-                                      "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/type",
-                                      "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/properties/a/type"
-                                    },
-                                    {
-                                      "valid": false,
-                                      "instanceLocation": "/something/name/a",
-                                      "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/properties",
-                                      "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/properties/a/properties",
-                                      "error": "Properties ['b'] are invalid",
-                                      "errors": [
-                                        {
-                                          "valid": false,
-                                          "instanceLocation": "/something/name/a/b",
-                                          "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/properties/b",
-                                          "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/properties/a/properties/b",
-                                          "errors": [
-                                            {
-                                              "valid": false,
-                                              "instanceLocation": "/something/name/a/b",
-                                              "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/properties/b/type",
-                                              "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/properties/a/properties/b/type",
-                                              "error": "The instance must be of type \"string\""
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "valid": true,
-                                      "instanceLocation": "/something/name/a",
-                                      "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/required",
-                                      "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/properties/a/required"
-                                    },
-                                    {
-                                      "valid": false,
-                                      "instanceLocation": "/something/name/a",
-                                      "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/minProperties",
-                                      "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/0/properties/a/minProperties",
-                                      "error": "The object has too few properties (minimum 2)"
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "valid": false,
-                          "instanceLocation": "/something/name",
-                          "keywordLocation": "/properties/something/properties/name/anyOf/1",
-                          "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/1",
-                          "errors": [
-                            {
-                              "valid": false,
-                              "instanceLocation": "/something/name",
-                              "keywordLocation": "/properties/something/properties/name/anyOf/1/type",
-                              "absoluteKeywordLocation": "urn:uuid:e7150e16-bd0f-47fe-891f-e611020e61e4#/properties/something/properties/name/anyOf/1/type",
-                              "error": "The instance must be of type \"integer\""
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "instanceLocation": "/something/name/a",
+              "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/minProperties",
+              "absoluteKeywordLocation": "urn:uuid:61278bef-43b5-434c-b432-d4ee300e059d#/properties/something/properties/name/anyOf/0/properties/a/minProperties",
+              "error": "The object has too few properties (minimum 2)"
             }
           ]
+        },
+        {
+          "instanceLocation": "/something/name",
+          "keywordLocation": "/properties/something/properties/name/anyOf/1/type",
+          "absoluteKeywordLocation": "urn:uuid:61278bef-43b5-434c-b432-d4ee300e059d#/properties/something/properties/name/anyOf/1/type",
+          "error": "The instance must be of type \"integer\""
         }
       ]
     }

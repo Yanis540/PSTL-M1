@@ -2,119 +2,45 @@
   "valid": true,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#",
+  "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#",
   "annotations": [
     {
-      "valid": true,
       "instanceLocation": "",
       "keywordLocation": "/type",
-      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/type"
+      "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/type"
     },
     {
-      "valid": true,
-      "instanceLocation": "",
-      "keywordLocation": "/properties",
-      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/properties",
-      "annotation": [
-        "email"
-      ],
+      "instanceLocation": "/email",
+      "keywordLocation": "/properties/email",
+      "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/properties/email",
       "annotations": [
         {
-          "valid": true,
           "instanceLocation": "/email",
-          "keywordLocation": "/properties/email",
-          "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/properties/email",
-          "annotations": [
-            {
-              "valid": true,
-              "instanceLocation": "/email",
-              "keywordLocation": "/properties/email/type",
-              "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/properties/email/type"
-            },
-            {
-              "valid": true,
-              "instanceLocation": "/email",
-              "keywordLocation": "/properties/email/format",
-              "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/properties/email/format",
-              "annotation": "email"
-            }
-          ]
+          "keywordLocation": "/properties/email/type",
+          "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/properties/email/type"
+        },
+        {
+          "instanceLocation": "/email",
+          "keywordLocation": "/properties/email/format",
+          "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/properties/email/format",
+          "annotation": "email"
         }
       ]
     },
     {
-      "valid": true,
       "instanceLocation": "",
       "keywordLocation": "/allOf",
-      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf",
+      "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/allOf",
       "annotations": [
         {
-          "valid": true,
           "instanceLocation": "",
-          "keywordLocation": "/allOf/0",
-          "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/0",
-          "annotations": [
-            {
-              "valid": true,
-              "instanceLocation": "",
-              "keywordLocation": "/allOf/0/not",
-              "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/0/not",
-              "annotations": [
-                {
-                  "valid": false,
-                  "instanceLocation": "",
-                  "keywordLocation": "/allOf/0/not/required",
-                  "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/0/not/required",
-                  "error": "The object is missing required properties ['phone']"
-                }
-              ]
-            }
-          ]
+          "keywordLocation": "/allOf/0/not",
+          "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/allOf/0/not"
         },
         {
-          "valid": true,
           "instanceLocation": "",
-          "keywordLocation": "/allOf/1",
-          "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1",
-          "annotations": [
-            {
-              "valid": true,
-              "instanceLocation": "",
-              "keywordLocation": "/allOf/1/anyOf",
-              "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf",
-              "annotations": [
-                {
-                  "valid": true,
-                  "instanceLocation": "",
-                  "keywordLocation": "/allOf/1/anyOf/0",
-                  "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf/0",
-                  "annotations": [
-                    {
-                      "valid": true,
-                      "instanceLocation": "",
-                      "keywordLocation": "/allOf/1/anyOf/0/required",
-                      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf/0/required"
-                    }
-                  ]
-                },
-                {
-                  "valid": false,
-                  "instanceLocation": "",
-                  "keywordLocation": "/allOf/1/anyOf/1",
-                  "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf/1",
-                  "errors": [
-                    {
-                      "valid": false,
-                      "instanceLocation": "",
-                      "keywordLocation": "/allOf/1/anyOf/1/required",
-                      "absoluteKeywordLocation": "urn:uuid:5c027555-56e9-449d-a3cb-b801b9150a70#/allOf/1/anyOf/1/required",
-                      "error": "The object is missing required properties ['phone']"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "keywordLocation": "/allOf/1/anyOf/0/required",
+          "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/allOf/1/anyOf/0/required"
         }
       ]
     }

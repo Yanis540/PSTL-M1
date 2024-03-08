@@ -85,4 +85,8 @@ todo        -   le gros soucis c'est l'opérateur :  not et allOf, y'a des techn
 ?           dire qu'on se base sur l'algorithme de fixing inspiré par l'erreur 
 ?           
 
+
+
+!   https://github.com/jimblackler/jsongenerator/blob/master/src/main/java/net/jimblackler/jsongenerator/Fixer.java
+
 */

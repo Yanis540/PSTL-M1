@@ -5,27 +5,23 @@
   "absoluteKeywordLocation": "https://raw.githubusercontent.com/AlekseyBuzmakov/FCAPS/master/FCAPS/schemas/graph.json#",
   "annotations": [
     {
-      "valid": true,
       "instanceLocation": "",
       "keywordLocation": "/title",
       "absoluteKeywordLocation": "https://raw.githubusercontent.com/AlekseyBuzmakov/FCAPS/master/FCAPS/schemas/graph.json#/title",
       "annotation": "Directed Graph JSON"
     },
     {
-      "valid": true,
       "instanceLocation": "",
       "keywordLocation": "/description",
       "absoluteKeywordLocation": "https://raw.githubusercontent.com/AlekseyBuzmakov/FCAPS/master/FCAPS/schemas/graph.json#/description",
       "annotation": "Json file gives a description of a directed graph"
     },
     {
-      "valid": true,
       "instanceLocation": "",
       "keywordLocation": "/type",
       "absoluteKeywordLocation": "https://raw.githubusercontent.com/AlekseyBuzmakov/FCAPS/master/FCAPS/schemas/graph.json#/type"
     },
     {
-      "valid": true,
       "instanceLocation": "",
       "keywordLocation": "/prefixItems",
       "absoluteKeywordLocation": "https://raw.githubusercontent.com/AlekseyBuzmakov/FCAPS/master/FCAPS/schemas/graph.json#/prefixItems",
@@ -110,7 +106,6 @@
       ]
     },
     {
-      "valid": true,
       "instanceLocation": "",
       "keywordLocation": "/minItems",
       "absoluteKeywordLocation": "https://raw.githubusercontent.com/AlekseyBuzmakov/FCAPS/master/FCAPS/schemas/graph.json#/minItems"

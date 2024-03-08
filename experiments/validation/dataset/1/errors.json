@@ -2,87 +2,24 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#",
+  "absoluteKeywordLocation": "urn:uuid:d13b9e04-3622-456d-8750-2795e34fea93#",
   "errors": [
     {
-      "valid": true,
-      "instanceLocation": "",
-      "keywordLocation": "/required",
-      "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/required"
-    },
-    {
-      "valid": false,
-      "instanceLocation": "",
-      "keywordLocation": "/properties",
-      "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties",
-      "error": "Properties ['name'] are invalid",
+      "instanceLocation": "/name",
+      "keywordLocation": "/properties/name/anyOf",
+      "absoluteKeywordLocation": "urn:uuid:d13b9e04-3622-456d-8750-2795e34fea93#/properties/name/anyOf",
       "errors": [
         {
-          "valid": false,
           "instanceLocation": "/name",
-          "keywordLocation": "/properties/name",
-          "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties/name",
-          "errors": [
-            {
-              "valid": false,
-              "instanceLocation": "/name",
-              "keywordLocation": "/properties/name/anyOf",
-              "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties/name/anyOf",
-              "error": "The instance must be valid against at least one subschema",
-              "errors": [
-                {
-                  "valid": false,
-                  "instanceLocation": "/name",
-                  "keywordLocation": "/properties/name/anyOf/0",
-                  "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties/name/anyOf/0",
-                  "errors": [
-                    {
-                      "valid": true,
-                      "instanceLocation": "/name",
-                      "keywordLocation": "/properties/name/anyOf/0/type",
-                      "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties/name/anyOf/0/type"
-                    },
-                    {
-                      "valid": true,
-                      "instanceLocation": "/name",
-                      "keywordLocation": "/properties/name/anyOf/0/description",
-                      "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties/name/anyOf/0/description",
-                      "annotation": "Cool! We got a string here!"
-                    },
-                    {
-                      "valid": false,
-                      "instanceLocation": "/name",
-                      "keywordLocation": "/properties/name/anyOf/0/required",
-                      "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties/name/anyOf/0/required",
-                      "error": "The object is missing required properties ['a']"
-                    },
-                    {
-                      "valid": true,
-                      "instanceLocation": "/name",
-                      "keywordLocation": "/properties/name/anyOf/0/properties",
-                      "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties/name/anyOf/0/properties",
-                      "annotation": []
-                    }
-                  ]
-                },
-                {
-                  "valid": false,
-                  "instanceLocation": "/name",
-                  "keywordLocation": "/properties/name/anyOf/1",
-                  "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties/name/anyOf/1",
-                  "errors": [
-                    {
-                      "valid": false,
-                      "instanceLocation": "/name",
-                      "keywordLocation": "/properties/name/anyOf/1/type",
-                      "absoluteKeywordLocation": "urn:uuid:c8958ded-0954-4db5-866c-907ca76afec3#/properties/name/anyOf/1/type",
-                      "error": "The instance must be of type \"integer\""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "keywordLocation": "/properties/name/anyOf/0/required",
+          "absoluteKeywordLocation": "urn:uuid:d13b9e04-3622-456d-8750-2795e34fea93#/properties/name/anyOf/0/required",
+          "error": "The object is missing required properties ['a']"
+        },
+        {
+          "instanceLocation": "/name",
+          "keywordLocation": "/properties/name/anyOf/1/type",
+          "absoluteKeywordLocation": "urn:uuid:d13b9e04-3622-456d-8750-2795e34fea93#/properties/name/anyOf/1/type",
+          "error": "The instance must be of type \"integer\""
         }
       ]
     }

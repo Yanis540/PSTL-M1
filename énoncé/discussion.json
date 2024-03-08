@@ -1,0 +1,35 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://jschon.dev/demo",
+    "type": "object",
+    "patternProperties":{
+        "^a.*":
+            {"multipleOf":3},
+        "^ab$":
+            {"type":"number", "minimum":11}
+    },
+    "required":["ab","bc"]
+}
+
+{
+    "ab": 17
+}
+
+
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://jschon.dev/demo",
+    "type": "object",
+    "patternProperties":{
+        "^a.*":
+            {"type":"object", "required":["xy"], "properties":{"xy":{"multipleOf":7}}},
+        "^ab$":
+            {"type":"object", "patternProperties":{"xy":{"type":"number", "multipleOf":5}} }
+    },
+    "required":["ab","bc"]
+}
+
+
+{
+    "ab": {"xy":35}
+}

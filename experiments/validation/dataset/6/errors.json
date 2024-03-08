@@ -2,51 +2,13 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:5c858536-c6e7-45db-ab65-5be021d2cdda#",
+  "absoluteKeywordLocation": "urn:uuid:0e6ed0f4-8a0b-452e-83be-2a8daa8d0857#",
   "errors": [
     {
-      "valid": true,
-      "instanceLocation": "",
-      "keywordLocation": "/type",
-      "absoluteKeywordLocation": "urn:uuid:5c858536-c6e7-45db-ab65-5be021d2cdda#/type"
-    },
-    {
-      "valid": false,
-      "instanceLocation": "",
-      "keywordLocation": "/patternProperties",
-      "absoluteKeywordLocation": "urn:uuid:5c858536-c6e7-45db-ab65-5be021d2cdda#/patternProperties",
-      "error": "Properties ['property2'] are invalid",
-      "errors": [
-        {
-          "valid": true,
-          "instanceLocation": "/property1",
-          "keywordLocation": "/patternProperties/^property[0-9]+$",
-          "absoluteKeywordLocation": "urn:uuid:5c858536-c6e7-45db-ab65-5be021d2cdda#/patternProperties/%5Eproperty%5B0-9%5D+$",
-          "annotations": [
-            {
-              "valid": true,
-              "instanceLocation": "/property1",
-              "keywordLocation": "/patternProperties/^property[0-9]+$/type",
-              "absoluteKeywordLocation": "urn:uuid:5c858536-c6e7-45db-ab65-5be021d2cdda#/patternProperties/%5Eproperty%5B0-9%5D+$/type"
-            }
-          ]
-        },
-        {
-          "valid": false,
-          "instanceLocation": "/property2",
-          "keywordLocation": "/patternProperties/^property[0-9]+$",
-          "absoluteKeywordLocation": "urn:uuid:5c858536-c6e7-45db-ab65-5be021d2cdda#/patternProperties/%5Eproperty%5B0-9%5D+$",
-          "errors": [
-            {
-              "valid": false,
-              "instanceLocation": "/property2",
-              "keywordLocation": "/patternProperties/^property[0-9]+$/type",
-              "absoluteKeywordLocation": "urn:uuid:5c858536-c6e7-45db-ab65-5be021d2cdda#/patternProperties/%5Eproperty%5B0-9%5D+$/type",
-              "error": "The instance must be of type \"string\""
-            }
-          ]
-        }
-      ]
+      "instanceLocation": "/property2",
+      "keywordLocation": "/patternProperties/^property[0-9]+$/type",
+      "absoluteKeywordLocation": "urn:uuid:0e6ed0f4-8a0b-452e-83be-2a8daa8d0857#/patternProperties/%5Eproperty%5B0-9%5D+$/type",
+      "error": "The instance must be of type \"string\""
     }
   ],
   "total_errors": [

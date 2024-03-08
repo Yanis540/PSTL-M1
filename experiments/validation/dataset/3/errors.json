@@ -2,56 +2,23 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:c8dabfef-92d4-4f43-a9ab-106129818747#",
+  "absoluteKeywordLocation": "urn:uuid:75c7bf28-3eb8-4b0f-843a-fa2f5722183a#",
   "errors": [
     {
-      "valid": true,
-      "instanceLocation": "",
-      "keywordLocation": "/type",
-      "absoluteKeywordLocation": "urn:uuid:c8dabfef-92d4-4f43-a9ab-106129818747#/type"
+      "instanceLocation": "/name",
+      "keywordLocation": "/properties/name/type",
+      "absoluteKeywordLocation": "urn:uuid:75c7bf28-3eb8-4b0f-843a-fa2f5722183a#/properties/name/type",
+      "error": "The instance must be of type \"string\""
     },
     {
-      "valid": false,
-      "instanceLocation": "",
-      "keywordLocation": "/properties",
-      "absoluteKeywordLocation": "urn:uuid:c8dabfef-92d4-4f43-a9ab-106129818747#/properties",
-      "error": "Properties ['name'] are invalid",
-      "errors": [
-        {
-          "valid": false,
-          "instanceLocation": "/name",
-          "keywordLocation": "/properties/name",
-          "absoluteKeywordLocation": "urn:uuid:c8dabfef-92d4-4f43-a9ab-106129818747#/properties/name",
-          "errors": [
-            {
-              "valid": false,
-              "instanceLocation": "/name",
-              "keywordLocation": "/properties/name/type",
-              "absoluteKeywordLocation": "urn:uuid:c8dabfef-92d4-4f43-a9ab-106129818747#/properties/name/type",
-              "error": "The instance must be of type \"string\""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "valid": false,
       "instanceLocation": "",
       "keywordLocation": "/not",
-      "absoluteKeywordLocation": "urn:uuid:c8dabfef-92d4-4f43-a9ab-106129818747#/not",
-      "error": "The instance must not be valid against the subschema",
-      "errors": [
-        {
-          "valid": true,
-          "instanceLocation": "",
-          "keywordLocation": "/not/required",
-          "absoluteKeywordLocation": "urn:uuid:c8dabfef-92d4-4f43-a9ab-106129818747#/not/required"
-        }
-      ]
+      "absoluteKeywordLocation": "urn:uuid:75c7bf28-3eb8-4b0f-843a-fa2f5722183a#/not",
+      "error": "The instance must not be valid against the subschema"
     }
   ],
   "total_errors": [
     "type",
-    "required"
+    "not"
   ]
 }
