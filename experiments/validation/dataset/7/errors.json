@@ -2,12 +2,12 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:f58784ea-3eef-4978-88a7-c16b25834304#",
+  "absoluteKeywordLocation": "urn:uuid:cbdcfa39-2edd-4e78-b3d8-4fae9df22794#",
   "errors": [
     {
       "instanceLocation": "",
       "keywordLocation": "/not",
-      "absoluteKeywordLocation": "urn:uuid:f58784ea-3eef-4978-88a7-c16b25834304#/not",
+      "absoluteKeywordLocation": "urn:uuid:cbdcfa39-2edd-4e78-b3d8-4fae9df22794#/not",
       "error": "The instance must not be valid against the subschema"
     }
   ],

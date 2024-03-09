@@ -1,0 +1,37 @@
+{
+  "valid": false,
+  "instanceLocation": "",
+  "keywordLocation": "",
+  "absoluteKeywordLocation": "urn:uuid:1ccee25f-049d-4bb8-a720-0d131d9394b9#",
+  "errors": [
+    {
+      "instanceLocation": "/tags/value",
+      "keywordLocation": "/properties/tags/properties/value/items",
+      "absoluteKeywordLocation": "urn:uuid:1ccee25f-049d-4bb8-a720-0d131d9394b9#/properties/tags/properties/value/items",
+      "errors": [
+        {
+          "instanceLocation": "/tags/value/0",
+          "keywordLocation": "/properties/tags/properties/value/items/type",
+          "absoluteKeywordLocation": "urn:uuid:1ccee25f-049d-4bb8-a720-0d131d9394b9#/properties/tags/properties/value/items/type",
+          "error": "The instance must be of type \"string\""
+        },
+        {
+          "instanceLocation": "/tags/value/1",
+          "keywordLocation": "/properties/tags/properties/value/items/type",
+          "absoluteKeywordLocation": "urn:uuid:1ccee25f-049d-4bb8-a720-0d131d9394b9#/properties/tags/properties/value/items/type",
+          "error": "The instance must be of type \"string\""
+        },
+        {
+          "instanceLocation": "/tags/value/2",
+          "keywordLocation": "/properties/tags/properties/value/items/type",
+          "absoluteKeywordLocation": "urn:uuid:1ccee25f-049d-4bb8-a720-0d131d9394b9#/properties/tags/properties/value/items/type",
+          "error": "The instance must be of type \"string\""
+        }
+      ]
+    }
+  ],
+  "total_errors": [
+    "items",
+    "type"
+  ]
+}

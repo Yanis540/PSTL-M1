@@ -2,18 +2,18 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:75c7bf28-3eb8-4b0f-843a-fa2f5722183a#",
+  "absoluteKeywordLocation": "urn:uuid:89b85ef4-d131-4585-8d1a-8063e85bbad4#",
   "errors": [
     {
       "instanceLocation": "/name",
       "keywordLocation": "/properties/name/type",
-      "absoluteKeywordLocation": "urn:uuid:75c7bf28-3eb8-4b0f-843a-fa2f5722183a#/properties/name/type",
+      "absoluteKeywordLocation": "urn:uuid:89b85ef4-d131-4585-8d1a-8063e85bbad4#/properties/name/type",
       "error": "The instance must be of type \"string\""
     },
     {
       "instanceLocation": "",
       "keywordLocation": "/not",
-      "absoluteKeywordLocation": "urn:uuid:75c7bf28-3eb8-4b0f-843a-fa2f5722183a#/not",
+      "absoluteKeywordLocation": "urn:uuid:89b85ef4-d131-4585-8d1a-8063e85bbad4#/not",
       "error": "The instance must not be valid against the subschema"
     }
   ],

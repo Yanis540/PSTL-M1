@@ -2,27 +2,27 @@
   "valid": true,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#",
+  "absoluteKeywordLocation": "urn:uuid:3240b7b2-0e85-48e9-8cef-fedd68464377#",
   "annotations": [
     {
       "instanceLocation": "",
       "keywordLocation": "/type",
-      "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/type"
+      "absoluteKeywordLocation": "urn:uuid:3240b7b2-0e85-48e9-8cef-fedd68464377#/type"
     },
     {
       "instanceLocation": "/email",
       "keywordLocation": "/properties/email",
-      "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/properties/email",
+      "absoluteKeywordLocation": "urn:uuid:3240b7b2-0e85-48e9-8cef-fedd68464377#/properties/email",
       "annotations": [
         {
           "instanceLocation": "/email",
           "keywordLocation": "/properties/email/type",
-          "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/properties/email/type"
+          "absoluteKeywordLocation": "urn:uuid:3240b7b2-0e85-48e9-8cef-fedd68464377#/properties/email/type"
         },
         {
           "instanceLocation": "/email",
           "keywordLocation": "/properties/email/format",
-          "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/properties/email/format",
+          "absoluteKeywordLocation": "urn:uuid:3240b7b2-0e85-48e9-8cef-fedd68464377#/properties/email/format",
           "annotation": "email"
         }
       ]
@@ -30,17 +30,17 @@
     {
       "instanceLocation": "",
       "keywordLocation": "/allOf",
-      "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/allOf",
+      "absoluteKeywordLocation": "urn:uuid:3240b7b2-0e85-48e9-8cef-fedd68464377#/allOf",
       "annotations": [
         {
           "instanceLocation": "",
           "keywordLocation": "/allOf/0/not",
-          "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/allOf/0/not"
+          "absoluteKeywordLocation": "urn:uuid:3240b7b2-0e85-48e9-8cef-fedd68464377#/allOf/0/not"
         },
         {
           "instanceLocation": "",
           "keywordLocation": "/allOf/1/anyOf/0/required",
-          "absoluteKeywordLocation": "urn:uuid:d2ed197b-3ab4-44b5-800f-0d0dafba74fc#/allOf/1/anyOf/0/required"
+          "absoluteKeywordLocation": "urn:uuid:3240b7b2-0e85-48e9-8cef-fedd68464377#/allOf/1/anyOf/0/required"
         }
       ]
     }
