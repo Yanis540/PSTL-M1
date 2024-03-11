@@ -1,5 +1,6 @@
 from jschon import create_catalog,JSON, JSONSchema
 import json,os
+from jschon.jsonschema import Result
 keywords_to_avoid = [
     'not','anyOf','oneOf','allOf','properties','patternPropreties','items',
     'additionalProperties','contains','unevaluatedProperties','prefixItems', 'unevaluatedItems'
@@ -7,7 +8,7 @@ keywords_to_avoid = [
 class Validator : 
     def __init__(self) -> None:
         create_catalog('2019-09')
-        pass
+        
     
     def extract_errors_map(self,error:dict, error_map:dict):
         # print(error)
@@ -35,7 +36,7 @@ class Validator :
         for error in errors : 
             self.extract_errors_map(error,error_map)
         return list(error_map.keys())
-    def validate_instance(schema_dir:str,instance_dir): 
+    def validate_instance(self,schema_dir:str,instance_dir) -> Result: 
         with open(schema_dir,'r',encoding='utf-8') as f : 
             schema= json.load(f)
         demo_schema = JSONSchema(schema)
@@ -47,9 +48,9 @@ class Validator :
             JSON(instance)
         )
         return result 
-    def get_errors_validation(self,schema_dir:str,instance_dir:str): 
+    def get_errors_validation(self,schema_dir:str,instance_dir:str,output_details='detailed'): 
         try:
-            result = self.validate_instance(schema_dir,instance_dir)
+            result = Result(self.validate_instance(schema_dir,instance_dir))
             # print(result.output('detailed'))# if errors in result.output('detailed')
             if(result.output("detailed")['valid']==False or "errors" in result.output("detailed")): 
                 errors = self.extract_errors(result.output('detailed')['errors'])

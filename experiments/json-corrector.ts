@@ -6,6 +6,7 @@ import jsf, { type Schema } from 'json-schema-faker';
 // Function to correct invalid data based on schema and validation errors
 function correctInvalidData(schema: Draft, invalidData: any, validationErrors: JsonError[]): any {
     const correctedData = { ...invalidData };
+    console.log(validationErrors)
     validationErrors.forEach((error) => {
         const { pointer, schema: errorSchema, value, received, expected } = error.data;
         // Splitting the pointer to navigate the data object
@@ -79,7 +80,8 @@ function generateFakerValue(schema: Schema): any {
 
 
 const jsonSchema: Draft = new Draft07(myJsonSchema);
-const errors: JsonError[] = jsonSchema.validate(myData);
+const compiledSchema = jsonSchema.compileSchema(jsonSchema)
+const errors: JsonError[] = jsonSchema.validate(myData,compiledSchema);
 const correctedData = correctInvalidData(jsonSchema, myData, errors);
 
 console.log("Corrected Data:", correctedData);

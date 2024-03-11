@@ -7,15 +7,14 @@
             "required":["a"],
             "properties":{
                 "a":{
-                    "type":"object",
-                    "properties":{
-                        "b":{
-                            "type":"string"
-                        }
-                    },
-                    "required":["b"]
+                    "type":"number", 
+                    "allOf":[
+                        {"multipleOf":3}, 
+                        {"minimum":11} 
+                    ]
                 }
-            }
+            } 
+            
         },
         {
             "type": "integer",

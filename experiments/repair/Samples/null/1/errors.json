@@ -1,0 +1,15 @@
+{
+  "valid": false,
+  "instanceLocation": "",
+  "keywordLocation": "",
+  "absoluteKeywordLocation": "urn:uuid:6b48b874-ce85-4221-8015-999077217a4b#",
+  "errors": [
+    {
+      "instanceLocation": "",
+      "keywordLocation": "/type",
+      "absoluteKeywordLocation": "urn:uuid:6b48b874-ce85-4221-8015-999077217a4b#/type",
+      "error": "The instance must be of type \"null\""
+    }
+  ],
+  "total_errors": []
+}

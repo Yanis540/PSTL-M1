@@ -1,0 +1,10 @@
+{
+    "properties" :{
+        "is_valid" : {
+            "type":"boolean"
+        }
+    }, 
+    "type":"object", 
+    "required":["is_valid"], 
+    "$schema": "https://json-schema.org/draft/2019-09/schema"
+}
