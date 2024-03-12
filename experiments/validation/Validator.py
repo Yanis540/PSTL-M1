@@ -50,7 +50,7 @@ class Validator :
         return result 
     def get_errors_validation(self,schema_dir:str,instance_dir:str,output_details='detailed'): 
         try:
-            result = Result(self.validate_instance(schema_dir,instance_dir))
+            result = self.validate_instance(schema_dir,instance_dir)
             # print(result.output('detailed'))# if errors in result.output('detailed')
             if(result.output("detailed")['valid']==False or "errors" in result.output("detailed")): 
                 errors = self.extract_errors(result.output('detailed')['errors'])

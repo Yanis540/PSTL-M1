@@ -1,0 +1,6 @@
+{
+    "type":"number", 
+    "minimum" : 100,
+    "multipleOf" : 3,
+    "$schema": "https://json-schema.org/draft/2019-09/schema"   
+}

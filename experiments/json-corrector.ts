@@ -80,8 +80,7 @@ function generateFakerValue(schema: Schema): any {
 
 
 const jsonSchema: Draft = new Draft07(myJsonSchema);
-const compiledSchema = jsonSchema.compileSchema(jsonSchema)
-const errors: JsonError[] = jsonSchema.validate(myData,compiledSchema);
+const errors: JsonError[] = jsonSchema.validate(myData);
 const correctedData = correctInvalidData(jsonSchema, myData, errors);
 
 console.log("Corrected Data:", correctedData);

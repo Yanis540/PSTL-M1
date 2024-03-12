@@ -2,14 +2,25 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:a2f0d7eb-0b43-434f-a883-8c0ec5e75f70#",
+  "absoluteKeywordLocation": "urn:uuid:99121124-62bc-4320-ba47-b0de7fc508ca#",
   "errors": [
     {
       "instanceLocation": "/is_valid",
       "keywordLocation": "/properties/is_valid/type",
-      "absoluteKeywordLocation": "urn:uuid:a2f0d7eb-0b43-434f-a883-8c0ec5e75f70#/properties/is_valid/type",
+      "absoluteKeywordLocation": "urn:uuid:99121124-62bc-4320-ba47-b0de7fc508ca#/properties/is_valid/type",
       "error": "The instance must be of type \"null\""
     }
   ],
-  "total_errors": []
+  "total_errors": [
+    [
+      "type",
+      [
+        {
+          "key": "type",
+          "instanceLocation": "/is_valid",
+          "keywordLocation": "/properties/is_valid/type"
+        }
+      ]
+    ]
+  ]
 }

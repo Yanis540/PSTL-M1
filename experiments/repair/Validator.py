@@ -14,28 +14,34 @@ class Validator :
         # print(error)
         # if there's errors in subschema treat them since they are the origin of the error  
         keywordLocation = str(error['keywordLocation'])
+        instanceLocation = str(error['instanceLocation'])
         key = keywordLocation.split('/')[-1]
+        data = {
+            "key":key,
+            "instanceLocation":instanceLocation,
+            "keywordLocation":keywordLocation
+        }
         if 'errors' in error:
             if key in  keywords_to_avoid :
                 if error_map.get(key) is None : 
-                    error_map[key]=[error['error'] if 'error' in error else '']
+                    error_map[key]=[data if 'error' in error else '']
                 else : 
-                    error_map[key].append(error['error'] if 'error' in error else '') 
+                    list(error_map[key]).append(data if 'error' in error else '') 
             for e in error['errors']:
                 self.extract_errors_map(e, error_map)
         else : 
             # if key not in keywords_to_avoid:
             if error_map.get(key) is None : 
-                error_map[key]=[error['error'] if 'error' in error else '']
+                error_map[key]=[data if 'error' in error else '']
             else : 
-                error_map[key].append(error['error'] if 'error' in error else '') 
+                list(error_map[key]).append(data if 'error' in error else '') 
         
             
     def extract_errors(self,errors): 
         error_map= {}
         for error in errors : 
             self.extract_errors_map(error,error_map)
-        return list(error_map.keys())
+        return list(error_map.items())
     def validate_instance(self,schema_dir:str,instance_dir) -> Result: 
         with open(schema_dir,'r',encoding='utf-8') as f : 
             schema= json.load(f)
@@ -50,12 +56,13 @@ class Validator :
         return result 
     def get_errors_validation(self,schema_dir:str,instance_dir:str,output_details='detailed'): 
         try:
-            result = Result(self.validate_instance(schema_dir,instance_dir))
+            result = self.validate_instance(schema_dir,instance_dir)
             # print(result.output('detailed'))# if errors in result.output('detailed')
             if(result.output("detailed")['valid']==False or "errors" in result.output("detailed")): 
                 errors = self.extract_errors(result.output('detailed')['errors'])
             else : 
                 errors=[]
             return errors
-        except : 
+        except Exception as e: 
+            print(str(e))
             return []

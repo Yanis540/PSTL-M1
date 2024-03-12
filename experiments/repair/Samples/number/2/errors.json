@@ -1,0 +1,26 @@
+{
+  "valid": false,
+  "instanceLocation": "",
+  "keywordLocation": "",
+  "absoluteKeywordLocation": "urn:uuid:aa77ade2-4d50-452f-ad97-30a077fb9228#",
+  "errors": [
+    {
+      "instanceLocation": "",
+      "keywordLocation": "/multipleOf",
+      "absoluteKeywordLocation": "urn:uuid:aa77ade2-4d50-452f-ad97-30a077fb9228#/multipleOf",
+      "error": "The value must be a multiple of 3"
+    }
+  ],
+  "total_errors": [
+    [
+      "multipleOf",
+      [
+        {
+          "key": "multipleOf",
+          "instanceLocation": "",
+          "keywordLocation": "/multipleOf"
+        }
+      ]
+    ]
+  ]
+}

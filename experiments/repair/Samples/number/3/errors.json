@@ -1,0 +1,42 @@
+{
+  "valid": false,
+  "instanceLocation": "",
+  "keywordLocation": "",
+  "absoluteKeywordLocation": "urn:uuid:b232b193-cd15-4e13-b202-6d98ac415e08#",
+  "errors": [
+    {
+      "instanceLocation": "",
+      "keywordLocation": "/minimum",
+      "absoluteKeywordLocation": "urn:uuid:b232b193-cd15-4e13-b202-6d98ac415e08#/minimum",
+      "error": "The value may not be less than 100"
+    },
+    {
+      "instanceLocation": "",
+      "keywordLocation": "/multipleOf",
+      "absoluteKeywordLocation": "urn:uuid:b232b193-cd15-4e13-b202-6d98ac415e08#/multipleOf",
+      "error": "The value must be a multiple of 3"
+    }
+  ],
+  "total_errors": [
+    [
+      "minimum",
+      [
+        {
+          "key": "minimum",
+          "instanceLocation": "",
+          "keywordLocation": "/minimum"
+        }
+      ]
+    ],
+    [
+      "multipleOf",
+      [
+        {
+          "key": "multipleOf",
+          "instanceLocation": "",
+          "keywordLocation": "/multipleOf"
+        }
+      ]
+    ]
+  ]
+}
