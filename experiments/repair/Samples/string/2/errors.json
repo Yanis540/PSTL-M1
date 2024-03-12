@@ -1,0 +1,26 @@
+{
+  "valid": false,
+  "instanceLocation": "",
+  "keywordLocation": "",
+  "absoluteKeywordLocation": "urn:uuid:6a580658-4cef-4ca4-bb74-d95c0a5d5783#",
+  "errors": [
+    {
+      "instanceLocation": "/name",
+      "keywordLocation": "/properties/name/type",
+      "absoluteKeywordLocation": "urn:uuid:6a580658-4cef-4ca4-bb74-d95c0a5d5783#/properties/name/type",
+      "error": "The instance must be of type \"string\""
+    }
+  ],
+  "total_errors": [
+    [
+      "type",
+      [
+        {
+          "key": "type",
+          "instanceLocation": "/name",
+          "keywordLocation": "/properties/name/type"
+        }
+      ]
+    ]
+  ]
+}

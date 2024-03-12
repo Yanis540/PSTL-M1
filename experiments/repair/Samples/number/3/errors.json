@@ -2,18 +2,18 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:b232b193-cd15-4e13-b202-6d98ac415e08#",
+  "absoluteKeywordLocation": "urn:uuid:c215c935-4bd8-4824-ba3f-884d9345324b#",
   "errors": [
     {
       "instanceLocation": "",
       "keywordLocation": "/minimum",
-      "absoluteKeywordLocation": "urn:uuid:b232b193-cd15-4e13-b202-6d98ac415e08#/minimum",
+      "absoluteKeywordLocation": "urn:uuid:c215c935-4bd8-4824-ba3f-884d9345324b#/minimum",
       "error": "The value may not be less than 100"
     },
     {
       "instanceLocation": "",
       "keywordLocation": "/multipleOf",
-      "absoluteKeywordLocation": "urn:uuid:b232b193-cd15-4e13-b202-6d98ac415e08#/multipleOf",
+      "absoluteKeywordLocation": "urn:uuid:c215c935-4bd8-4824-ba3f-884d9345324b#/multipleOf",
       "error": "The value must be a multiple of 3"
     }
   ],
