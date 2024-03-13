@@ -1,0 +1,82 @@
+{
+  "valid": false,
+  "instanceLocation": "",
+  "keywordLocation": "",
+  "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#",
+  "errors": [
+    {
+      "instanceLocation": "",
+      "keywordLocation": "/anyOf",
+      "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf",
+      "errors": [
+        {
+          "instanceLocation": "",
+          "keywordLocation": "/anyOf/0",
+          "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf/0",
+          "errors": [
+            {
+              "instanceLocation": "",
+              "keywordLocation": "/anyOf/0/multipleOf",
+              "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf/0/multipleOf",
+              "error": "The value must be a multiple of 3"
+            },
+            {
+              "instanceLocation": "",
+              "keywordLocation": "/anyOf/0/minimum",
+              "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf/0/minimum",
+              "error": "The value may not be less than 100"
+            }
+          ]
+        },
+        {
+          "instanceLocation": "",
+          "keywordLocation": "/anyOf/1/type",
+          "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf/1/type",
+          "error": "The instance must be of type \"object\""
+        }
+      ]
+    }
+  ],
+  "total_errors": [
+    [
+      "multipleOf",
+      [
+        {
+          "key": "multipleOf",
+          "instanceLocation": "",
+          "keywordLocation": "/anyOf/0/multipleOf"
+        }
+      ]
+    ],
+    [
+      "minimum",
+      [
+        {
+          "key": "minimum",
+          "instanceLocation": "",
+          "keywordLocation": "/anyOf/0/minimum"
+        }
+      ]
+    ],
+    [
+      "type",
+      [
+        {
+          "key": "type",
+          "instanceLocation": "",
+          "keywordLocation": "/anyOf/1/type"
+        }
+      ]
+    ],
+    [
+      "anyOf",
+      [
+        {
+          "key": "anyOf",
+          "instanceLocation": "",
+          "keywordLocation": "/anyOf"
+        }
+      ]
+    ]
+  ]
+}

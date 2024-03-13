@@ -1,0 +1,15 @@
+{
+    "properties" :{
+        "name" : {
+            "type":"string"
+        }, 
+        "email":{
+            "description": "Email of the user",
+            "type": "string",
+            "format": "email"
+        }
+    }, 
+    "type":"object", 
+    "required":["name"], 
+    "$schema": "https://json-schema.org/draft/2019-09/schema"
+}

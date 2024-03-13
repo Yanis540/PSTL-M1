@@ -2,12 +2,12 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:59f8080b-6953-4e44-a1ca-399e96567fff#",
+  "absoluteKeywordLocation": "urn:uuid:eca612f1-a984-4dca-9563-52ad01c0ec48#",
   "errors": [
     {
       "instanceLocation": "",
       "keywordLocation": "/type",
-      "absoluteKeywordLocation": "urn:uuid:59f8080b-6953-4e44-a1ca-399e96567fff#/type",
+      "absoluteKeywordLocation": "urn:uuid:eca612f1-a984-4dca-9563-52ad01c0ec48#/type",
       "error": "The instance must be of type \"number\""
     }
   ],

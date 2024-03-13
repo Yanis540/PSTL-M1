@@ -1,0 +1,25 @@
+{
+    
+    "anyOf" : [
+        {
+            "type":"number", 
+            "multipleOf": 3,
+            "minimum":100
+        }, 
+        {
+            "type":"object", 
+            "required":["name"],
+            "properties" :{
+                "name" : {
+                    "type":"string"
+                }, 
+                "email":{
+                    "description": "Email of the user",
+                    "type": "string",
+                    "format": "email"
+                }
+            } 
+        }
+    ],
+    "$schema": "https://json-schema.org/draft/2019-09/schema"
+}

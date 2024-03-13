@@ -22,19 +22,20 @@ class Validator :
             "keywordLocation":keywordLocation
         }
         if 'errors' in error:
-            if key in  keywords_to_avoid :
-                if error_map.get(key) is None : 
-                    error_map[key]=[data if 'error' in error else '']
-                else : 
-                    list(error_map[key]).append(data if 'error' in error else '') 
             for e in error['errors']:
                 self.extract_errors_map(e, error_map)
+            if key in  keywords_to_avoid :
+                if error_map.get(key) is None : 
+                    error_map[key]=[data]
+                else : 
+                    list(error_map[key]).append(data) 
+            
         else : 
             # if key not in keywords_to_avoid:
             if error_map.get(key) is None : 
-                error_map[key]=[data if 'error' in error else '']
+                error_map[key]=[data]
             else : 
-                list(error_map[key]).append(data if 'error' in error else '') 
+                list(error_map[key]).append(data) 
         
             
     def extract_errors(self,errors): 

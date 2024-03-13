@@ -2,12 +2,12 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:45215c39-7774-4fb4-b705-18a3b375462e#",
+  "absoluteKeywordLocation": "urn:uuid:f654ab3d-c955-4252-95d7-dfbddf217996#",
   "errors": [
     {
       "instanceLocation": "",
       "keywordLocation": "/multipleOf",
-      "absoluteKeywordLocation": "urn:uuid:45215c39-7774-4fb4-b705-18a3b375462e#/multipleOf",
+      "absoluteKeywordLocation": "urn:uuid:f654ab3d-c955-4252-95d7-dfbddf217996#/multipleOf",
       "error": "The value must be a multiple of 3"
     }
   ],
