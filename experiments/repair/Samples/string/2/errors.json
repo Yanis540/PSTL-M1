@@ -2,12 +2,12 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:8d7b765e-2865-4293-a76f-b4eee66f2628#",
+  "absoluteKeywordLocation": "urn:uuid:bde297a6-02c6-4730-a8ad-167d49ab32aa#",
   "errors": [
     {
       "instanceLocation": "/name",
       "keywordLocation": "/properties/name/type",
-      "absoluteKeywordLocation": "urn:uuid:8d7b765e-2865-4293-a76f-b4eee66f2628#/properties/name/type",
+      "absoluteKeywordLocation": "urn:uuid:bde297a6-02c6-4730-a8ad-167d49ab32aa#/properties/name/type",
       "error": "The instance must be of type \"string\""
     }
   ],
@@ -18,7 +18,8 @@
         {
           "key": "type",
           "instanceLocation": "/name",
-          "keywordLocation": "/properties/name/type"
+          "keywordLocation": "/properties/name/type",
+          "error": "The instance must be of type \"string\""
         }
       ]
     ]

@@ -16,10 +16,15 @@ class Validator :
         keywordLocation = str(error['keywordLocation'])
         instanceLocation = str(error['instanceLocation'])
         key = keywordLocation.split('/')[-1]
+        if error and 'error' in  error.keys(): 
+            err_message = error['error']
+        else: 
+            err_message=None 
         data = {
             "key":key,
             "instanceLocation":instanceLocation,
-            "keywordLocation":keywordLocation
+            "keywordLocation":keywordLocation, 
+            "error" : err_message 
         }
         if 'errors' in error:
             for e in error['errors']:

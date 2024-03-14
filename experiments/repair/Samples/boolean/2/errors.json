@@ -2,12 +2,12 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:9b1510b9-571b-4f6b-9223-9060b957c4b1#",
+  "absoluteKeywordLocation": "urn:uuid:2953ea3a-baae-4170-ab34-11a2784a16a3#",
   "errors": [
     {
       "instanceLocation": "/is_valid",
       "keywordLocation": "/properties/is_valid/type",
-      "absoluteKeywordLocation": "urn:uuid:9b1510b9-571b-4f6b-9223-9060b957c4b1#/properties/is_valid/type",
+      "absoluteKeywordLocation": "urn:uuid:2953ea3a-baae-4170-ab34-11a2784a16a3#/properties/is_valid/type",
       "error": "The instance must be of type \"boolean\""
     }
   ],
@@ -18,7 +18,8 @@
         {
           "key": "type",
           "instanceLocation": "/is_valid",
-          "keywordLocation": "/properties/is_valid/type"
+          "keywordLocation": "/properties/is_valid/type",
+          "error": "The instance must be of type \"boolean\""
         }
       ]
     ]

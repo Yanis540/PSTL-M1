@@ -2,18 +2,18 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:aa947517-4db7-4362-b9d7-45b5b3950bb5#",
+  "absoluteKeywordLocation": "urn:uuid:3ea9f5b0-f112-4a90-abcf-b364df44ad61#",
   "errors": [
     {
       "instanceLocation": "/email",
       "keywordLocation": "/properties/email/type",
-      "absoluteKeywordLocation": "urn:uuid:aa947517-4db7-4362-b9d7-45b5b3950bb5#/properties/email/type",
+      "absoluteKeywordLocation": "urn:uuid:3ea9f5b0-f112-4a90-abcf-b364df44ad61#/properties/email/type",
       "error": "The instance must be of type \"string\""
     },
     {
       "instanceLocation": "",
       "keywordLocation": "/required",
-      "absoluteKeywordLocation": "urn:uuid:aa947517-4db7-4362-b9d7-45b5b3950bb5#/required",
+      "absoluteKeywordLocation": "urn:uuid:3ea9f5b0-f112-4a90-abcf-b364df44ad61#/required",
       "error": "The object is missing required properties ['name']"
     }
   ],
@@ -24,7 +24,8 @@
         {
           "key": "type",
           "instanceLocation": "/email",
-          "keywordLocation": "/properties/email/type"
+          "keywordLocation": "/properties/email/type",
+          "error": "The instance must be of type \"string\""
         }
       ]
     ],
@@ -34,7 +35,8 @@
         {
           "key": "required",
           "instanceLocation": "",
-          "keywordLocation": "/required"
+          "keywordLocation": "/required",
+          "error": "The object is missing required properties ['name']"
         }
       ]
     ]

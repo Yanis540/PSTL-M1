@@ -2,28 +2,28 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#",
+  "absoluteKeywordLocation": "urn:uuid:a80fb152-de21-4d18-8ef4-48e546f9c20b#",
   "errors": [
     {
       "instanceLocation": "",
       "keywordLocation": "/anyOf",
-      "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf",
+      "absoluteKeywordLocation": "urn:uuid:a80fb152-de21-4d18-8ef4-48e546f9c20b#/anyOf",
       "errors": [
         {
           "instanceLocation": "",
           "keywordLocation": "/anyOf/0",
-          "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf/0",
+          "absoluteKeywordLocation": "urn:uuid:a80fb152-de21-4d18-8ef4-48e546f9c20b#/anyOf/0",
           "errors": [
             {
               "instanceLocation": "",
               "keywordLocation": "/anyOf/0/multipleOf",
-              "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf/0/multipleOf",
+              "absoluteKeywordLocation": "urn:uuid:a80fb152-de21-4d18-8ef4-48e546f9c20b#/anyOf/0/multipleOf",
               "error": "The value must be a multiple of 3"
             },
             {
               "instanceLocation": "",
               "keywordLocation": "/anyOf/0/minimum",
-              "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf/0/minimum",
+              "absoluteKeywordLocation": "urn:uuid:a80fb152-de21-4d18-8ef4-48e546f9c20b#/anyOf/0/minimum",
               "error": "The value may not be less than 100"
             }
           ]
@@ -31,7 +31,7 @@
         {
           "instanceLocation": "",
           "keywordLocation": "/anyOf/1/type",
-          "absoluteKeywordLocation": "urn:uuid:42bac07e-8baa-42bb-88ea-3648a550f793#/anyOf/1/type",
+          "absoluteKeywordLocation": "urn:uuid:a80fb152-de21-4d18-8ef4-48e546f9c20b#/anyOf/1/type",
           "error": "The instance must be of type \"object\""
         }
       ]
@@ -44,7 +44,8 @@
         {
           "key": "multipleOf",
           "instanceLocation": "",
-          "keywordLocation": "/anyOf/0/multipleOf"
+          "keywordLocation": "/anyOf/0/multipleOf",
+          "error": "The value must be a multiple of 3"
         }
       ]
     ],
@@ -54,7 +55,8 @@
         {
           "key": "minimum",
           "instanceLocation": "",
-          "keywordLocation": "/anyOf/0/minimum"
+          "keywordLocation": "/anyOf/0/minimum",
+          "error": "The value may not be less than 100"
         }
       ]
     ],
@@ -64,7 +66,8 @@
         {
           "key": "type",
           "instanceLocation": "",
-          "keywordLocation": "/anyOf/1/type"
+          "keywordLocation": "/anyOf/1/type",
+          "error": "The instance must be of type \"object\""
         }
       ]
     ],
@@ -74,7 +77,8 @@
         {
           "key": "anyOf",
           "instanceLocation": "",
-          "keywordLocation": "/anyOf"
+          "keywordLocation": "/anyOf",
+          "error": null
         }
       ]
     ]
