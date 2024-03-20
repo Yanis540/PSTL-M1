@@ -1,0 +1,9 @@
+{
+    "DG": [],
+    "JE": [
+        "oneOf",
+        "required",
+        "additionalProperties"
+    ],
+    "JSF": []
+}

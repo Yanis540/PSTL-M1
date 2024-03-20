@@ -1,0 +1,11 @@
+{
+    "DG": [],
+    "JE": [
+        "oneOf",
+        "required"
+    ],
+    "JSF": [
+        "oneOf",
+        "required"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "DG": [
+        "oneOf"
+    ],
+    "JE": [
+        "oneOf",
+        "additionalProperties"
+    ],
+    "JSF": []
+}

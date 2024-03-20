@@ -1,0 +1,4 @@
+{
+  "responseType" : "token",
+  "grantType" : "client_credentials"
+}

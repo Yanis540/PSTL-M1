@@ -1,0 +1,17 @@
+{
+    "DG": [
+        "oneOf",
+        "additionalProperties",
+        "required"
+    ],
+    "JE": [
+        "oneOf",
+        "type",
+        "additionalProperties",
+        "required"
+    ],
+    "JSF": [
+        "oneOf",
+        "required"
+    ]
+}
