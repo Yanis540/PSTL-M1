@@ -1,0 +1,6 @@
+{}===> // enlever les propriétées additionnelles
+// choisir la première branche de oneOf 
+{
+    "grantType": "authorization_code",
+    "responseType": "code"
+}

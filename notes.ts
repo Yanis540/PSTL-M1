@@ -89,4 +89,11 @@ todo        -   le gros soucis c'est l'opérateur :  not et allOf, y'a des techn
 
 !   https://github.com/jimblackler/jsongenerator/blob/master/src/main/java/net/jimblackler/jsongenerator/Fixer.java
 
+
+
+
+!   Définir l'ordre des corrections : 
+?       -   Types
+?       -   Required 
+
 */

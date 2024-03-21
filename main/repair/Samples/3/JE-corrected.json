@@ -1,0 +1,8 @@
+{
+    "keys":true 
+}
+// ====> régler d'abord le type error type error
+// expected type : array 
+{
+    "keys":[]
+} 

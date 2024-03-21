@@ -1,0 +1,11 @@
+{
+    "Auth":null
+}
+=> 
+{
+
+}
+=> 
+{
+    "grantType":"authorization_code"
+}
