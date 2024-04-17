@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: rapport.aux
+Reallocating 'name_of_file' (item size: 1) to 35 items.
+A level-1 auxiliary file: Chapitres/Chapitre0/page_garde.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: Chapitres/TablesContenus/tables.aux
+Reallocating 'name_of_file' (item size: 1) to 37 items.
+A level-1 auxiliary file: Chapitres/Chapitre0/introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 46 items.
+A level-1 auxiliary file: Chapitres/Bibliographique/Bibliographique.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+Database file #1: bibliographie.bib
+Warning--entry type for "JSON_Schema" isn't style-file defined
+--line 6 of file bibliographie.bib
+Warning--entry type for "JEDI" isn't style-file defined
+--line 10 of file bibliographie.bib
+Warning--entry type for "JSON_Similarity" isn't style-file defined
+--line 20 of file bibliographie.bib
+You've used 3 entries,
+            1791 wiz_defined-function locations,
+            462 strings with 4015 characters,
+and the built_in function-call counts, 397 in all, are:
+= -- 25
+> -- 19
+< -- 0
++ -- 8
+- -- 5
+* -- 14
+:= -- 56
+add.period$ -- 6
+call.type$ -- 3
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 15
+empty$ -- 55
+format.name$ -- 5
+if$ -- 93
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 0
+newline$ -- 15
+num.names$ -- 1
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 16
+stack$ -- 0
+substring$ -- 0
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 1
+width$ -- 4
+write$ -- 24
+(There were 3 warnings)

@@ -1,0 +1,179 @@
+\documentclass[11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{a4wide}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+\usepackage[frenchb]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{times}
+
+
+%FONT ANCIEN 
+% \usepackage{mathrsfs}
+% \usepackage{fourier}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage{hhline}
+\usepackage{soul}
+\usepackage[Glenn]{fncychap}
+\usepackage{url}
+\usepackage{float}
+\usepackage{booktabs} 
+\usepackage{enumitem}
+\usepackage{xcolor}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\usepackage{tcolorbox}
+\usepackage{float}
+\usepackage{caption}
+%\usepackage{indentfirst}% pour tester l'indentationy
+\ChNameVar{\fontsize{12}{14}\usefont{OT1}{phv}{m}{n}\bfseries}
+\ChNumVar{\fontsize{58}{60}\selectfont\color{black}}
+\ChTitleVar{\LARGE\bfseries}
+\usepackage[top = 2.5cm, bottom = 2.5cm, left = 3 cm, right = 2.5cm]{geometry}
+\usepackage{subcaption}
+\usepackage[bottom]{footmisc}
+
+\newtheorem{dfn}{D\'efinition}[section]
+\newtheorem{nota}{Notation}
+\newtheorem{PseudoDef}[dfn]{Pseudo-D\'efinition}
+\newtheorem{prp}[dfn]{Proposition}
+\newtheorem{crl}[dfn]{Corollaire}
+\newtheorem{thm}[dfn]{Th\'eor\`eme}
+\newtheorem{ex}[dfn]{Exemple}
+\newtheorem{lmm}[dfn]{Lemme}
+\newtheorem{rmq}[dfn]{Remarque}
+\newtheorem{prv}[dfn]{Preuve}
+\newtheorem{ctrex}[dfn]{Contre-exemple}
+\newtheorem{remark}{Remarque }
+\newcommand\va{taarif}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\usepackage{breakurl}
+\usepackage[breaklinks]{hyperref}
+\usetikzlibrary{calc} 
+\usetikzlibrary{positioning}
+% this is my sub-subsection modification (by salim)
+% ! remove the red boxes from referenced labels
+\hypersetup{hidelinks}
+
+\captionsetup{compatibility=false}
+
+
+
+\cfoot{\thepage}
+
+\fancyhead[L]{\quad}
+
+\setlength{\headheight}{21 pt}
+\usepackage{hyperref}
+\hypersetup{
+	backref=true, %permet d'ajouter des liens dans...
+	pagebackref=true,%...les bibliographies
+	hyperindex=true, %ajoute des liens dans les index.
+	colorlinks=false, %colorise les liens
+	breaklinks=true, %permet le retour à la ligne dans les liens trop longs
+	urlcolor= blue, %couleur des hyperliens
+	linkcolor= black, %couleur des liens internes  (blue,red,green,yellow,cyan,magenta)
+	bookmarks=true, %créé des signets pour Acrobat
+	bookmarksopen=true %si les signets Acrobat sont créés,
+	%les afficher complètement.
+}
+
+\renewcommand{\labelitemi}{$\bullet$}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\renewcommand\thesubsubsection{\roman{subsubsection}}
+\usepackage{minipage-marginpar}
+
+
+%	pour les algorithmes \Require devient entrées , et \Ensure devient Sorties
+\algrenewcommand\algorithmicrequire{\textbf{Entrées:}}
+\algrenewcommand\algorithmicensure{\textbf{Sorties:}}
+
+\algdef{SE}{Begin}{End}{\textbf{Begin}}{\textbf{End}}
+
+\title{Titre}
+\author{Binome1\_Binome2}
+\usetikzlibrary{svg.path}
+\usetikzlibrary{shapes.geometric, arrows, decorations.pathmorphing}
+
+
+\tikzset{basic/.style={draw,fill=none,
+                       text badly centered,minimum width=2em}}
+\tikzset{input/.style={basic,circle,minimum width=2.5em}}
+\tikzset{weights/.style={basic,rectangle,minimum width=2em}}
+\tikzset{functions/.style={basic,circle, minimum width=3em}}
+\newcommand{\addaxes}{\draw (0em,1em) -- (0em,-1em)
+                            (-1em,0em) -- (1em,0em);}
+\newcommand{\relu}{\draw[line width=1.5pt] (-1em,0) -- (0,0)
+                                (0,0) -- (0.75em,0.75em);}
+\newcommand{\stepfunc}{\draw[line width=1.5pt] (0.65em,0.65em) -- (0,0.65em) 
+                                    -- (0,-0.65em) -- (-0.65em,-0.65em);}
+
+
+\begin{document}
+	%!	NO TOC SECTIONS
+	\newcommand{\notocsection}[1]{%
+	\refstepcounter{section}%
+	\section*{\thesection \quad #1}}%
+
+	\newcommand{\notocsubsection}[1]{%
+	\refstepcounter{subsection}%
+	\subsection*{\thesubsection \quad #1}}%
+
+
+	\newcommand{\notocsubsubsection}[1]{%
+	\refstepcounter{subsubsection}%
+	\subsubsection*{\thesubsubsection \quad #1}}%
+
+	\renewcommand\thesection{\arabic{section}}
+	\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
+	\renewcommand\theremark{\empty{}}
+	\newcommand\subsubsubsection[1]{\paragraph{#1}\mbox{}\\}
+	\setcounter{secnumdepth}{4}
+	\setcounter{tocdepth}{4}
+
+	\newcommand\subsubsubsubsection[1]{\subparagraph{#1}\mbox{}\\}
+	\setcounter{secnumdepth}{5}
+	\setcounter{tocdepth}{5}
+
+	\renewcommand\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+	\renewcommand\theparagraph{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}}
+	\renewcommand\thesubparagraph{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}.\arabic{subparagraph}}
+
+	\include{Chapitres/Chapitre0/page_garde}
+    % \include{Chapitres/Remerciements/Remerciements.tex}
+    % \include{Chapitres/Dedicaces/Dedicace.tex}
+	%\maketitle
+    \include{Chapitres/TablesContenus/tables.tex}
+	
+	
+	\pagestyle{fancy}
+	\setcounter{page}{1}
+	\include{Chapitres/Chapitre0/introduction}
+	% \include{Chapitres/Chapitre0/introduction}
+	
+	% \include{Chapitres/Chapitre1/chapitre1}
+	% \include{Chapitres/Chapitre2/chapitre2}
+	% \include{Chapitres/Chapitre3/chapitre3}
+	% \include{Chapitres/Chapitre4/conception}
+	% \include{Chapitres/Chapitre5/realisation}
+	\pagestyle{empty}
+	% \include{Chapitres/Conclusion/conclusion}
+	\include{Chapitres/Bibliographique/Bibliographique.tex}
+	\appendix
+	% \include{Chapitres/AnnexeA/AnnexeA}
+	% \include{Chapitres/AnnexeB/AnnexeB} 
+	% \include{Chapitres/AnnexeC/AnnexeC} 
+	\pagestyle{empty}
+	% \include{Chapitres/Résumé/Résumé} 
+
+\end{document}

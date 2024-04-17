@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{JEDI}
+Thomas Hütter, Nikolaus Augsten, Christoph Kirsch, Michael Carey, and Chen Li.
+\newblock Jedi: These aren't the json documents you're looking for..., June
+  2022.
+
+\bibitem{JSON_Schema}
+Json schema.
+\newblock \url{https://json-schema.org}.
+
+\bibitem{JSON_Similarity}
+Json similarity comparitor.
+\newblock \url{https://github.com/Geo3ngel/JSON-Similarity-comparitor}.
+
+\end{thebibliography}
