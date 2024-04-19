@@ -1,10 +1,8 @@
 {
 
-    "anyOf": [
-        {
             "type": "object",
             "description": "Cool! We got a string here!",
-            "required":["a"],
+            "required":["a","b"],
             "properties":{
                 "a":{
                     "type":"number", 
@@ -12,14 +10,17 @@
                         {"multipleOf":3}, 
                         {"minimum":11} 
                     ]
+                },
+                "b":{"type":"array",
+                "items":{
+                    "type":"object",
+                    "properties":{
+                        "c":{"type":"number"}
+                    },
+                    "required":["c"]
+                }
                 }
             } 
             
-        },
-        {
-            "type": "integer",
-            "description": "Hey! We got an integer here!"
-        }
-    ]
 
 }

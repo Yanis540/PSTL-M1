@@ -11,27 +11,26 @@ function correctInvalidData(schema: Draft, invalidData: any, validationErrors: J
         const { pointer, schema: errorSchema, value, received, expected } = error.data;
         // Splitting the pointer to navigate the data object
         const path = pointer.substring(2).split('/');
-
         let currentObject = correctedData;
         let parentObject = correctedData;
         let lastKey = "";
         for (let i = 0; i < path.length; i++) {
-        const key = path[i];
+            const key = path[i];
 
-        // Check if the current key is an array index
-        const index = parseInt(key, 10);
-        
-        if (!isNaN(index) && Array.isArray(currentObject)) {
-            parentObject = currentObject;
-            lastKey = key;
-            currentObject = currentObject[index];
-        } else {
-            parentObject = currentObject;
-            if(key.trim()){
+            // Check if the current key is an array index
+            const index = parseInt(key, 10);
+            
+            if (!isNaN(index) && Array.isArray(currentObject)) {
+                parentObject = currentObject;
                 lastKey = key;
-                currentObject = currentObject[key];
+                currentObject = currentObject[index];
+            } else {
+                parentObject = currentObject;
+                if(key.trim()){
+                    lastKey = key;
+                    currentObject = currentObject[key];
+                }
             }
-        }
         }
         // Handle different error types
         if (error.name === "TypeError") {
