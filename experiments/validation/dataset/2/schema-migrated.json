@@ -1,9 +1,9 @@
 {
   "required": [
-    "something"
+    "person"
   ],
   "properties": {
-    "something": {
+    "person": {
       "required": [
         "name"
       ],
@@ -12,27 +12,26 @@
           "anyOf": [
             {
               "type": "object",
-              "description": "Cool! We got a string here!",
               "required": [
-                "a"
+                "first"
               ],
               "properties": {
-                "a": {
+                "first": {
                   "type": "object",
                   "properties": {
-                    "b": {
+                    "surname": {
                       "type": "string"
                     }
                   },
                   "required": [
-                    "b"
+                    "surname"
                   ],
                   "minProperties": 2
                 }
               }
             },
             {
-              "type": "integer"
+              "type": "string"
             }
           ]
         }

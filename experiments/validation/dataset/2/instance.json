@@ -1,8 +1,8 @@
 {
-    "something":{
+    "person":{
         "name":{
-            "a":{
-                "b":12
+            "first":{
+                "surname":12
             }
         }
     }

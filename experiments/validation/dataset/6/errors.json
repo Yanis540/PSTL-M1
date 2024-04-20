@@ -2,12 +2,12 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:63d30aa3-007c-464e-9f5a-ef44f9f2d7ef#",
+  "absoluteKeywordLocation": "urn:uuid:73b8a52d-2951-4d6f-a532-f300cf43c041#",
   "errors": [
     {
       "instanceLocation": "/property2",
       "keywordLocation": "/patternProperties/^property[0-9]+$/type",
-      "absoluteKeywordLocation": "urn:uuid:63d30aa3-007c-464e-9f5a-ef44f9f2d7ef#/patternProperties/%5Eproperty%5B0-9%5D+$/type",
+      "absoluteKeywordLocation": "urn:uuid:73b8a52d-2951-4d6f-a532-f300cf43c041#/patternProperties/%5Eproperty%5B0-9%5D+$/type",
       "error": "The instance must be of type \"string\""
     }
   ],

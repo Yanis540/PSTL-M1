@@ -2,37 +2,37 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:b8d652de-798d-4b97-94dc-3f39df4661bd#",
+  "absoluteKeywordLocation": "urn:uuid:f8d02fb5-7074-4b88-a2c5-f3d8f141e3ad#",
   "errors": [
     {
-      "instanceLocation": "/something/name",
-      "keywordLocation": "/properties/something/properties/name/anyOf",
-      "absoluteKeywordLocation": "urn:uuid:b8d652de-798d-4b97-94dc-3f39df4661bd#/properties/something/properties/name/anyOf",
+      "instanceLocation": "/person/name",
+      "keywordLocation": "/properties/person/properties/name/anyOf",
+      "absoluteKeywordLocation": "urn:uuid:f8d02fb5-7074-4b88-a2c5-f3d8f141e3ad#/properties/person/properties/name/anyOf",
       "errors": [
         {
-          "instanceLocation": "/something/name/a",
-          "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a",
-          "absoluteKeywordLocation": "urn:uuid:b8d652de-798d-4b97-94dc-3f39df4661bd#/properties/something/properties/name/anyOf/0/properties/a",
+          "instanceLocation": "/person/name/first",
+          "keywordLocation": "/properties/person/properties/name/anyOf/0/properties/first",
+          "absoluteKeywordLocation": "urn:uuid:f8d02fb5-7074-4b88-a2c5-f3d8f141e3ad#/properties/person/properties/name/anyOf/0/properties/first",
           "errors": [
             {
-              "instanceLocation": "/something/name/a/b",
-              "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/properties/b/type",
-              "absoluteKeywordLocation": "urn:uuid:b8d652de-798d-4b97-94dc-3f39df4661bd#/properties/something/properties/name/anyOf/0/properties/a/properties/b/type",
+              "instanceLocation": "/person/name/first/surname",
+              "keywordLocation": "/properties/person/properties/name/anyOf/0/properties/first/properties/surname/type",
+              "absoluteKeywordLocation": "urn:uuid:f8d02fb5-7074-4b88-a2c5-f3d8f141e3ad#/properties/person/properties/name/anyOf/0/properties/first/properties/surname/type",
               "error": "The instance must be of type \"string\""
             },
             {
-              "instanceLocation": "/something/name/a",
-              "keywordLocation": "/properties/something/properties/name/anyOf/0/properties/a/minProperties",
-              "absoluteKeywordLocation": "urn:uuid:b8d652de-798d-4b97-94dc-3f39df4661bd#/properties/something/properties/name/anyOf/0/properties/a/minProperties",
+              "instanceLocation": "/person/name/first",
+              "keywordLocation": "/properties/person/properties/name/anyOf/0/properties/first/minProperties",
+              "absoluteKeywordLocation": "urn:uuid:f8d02fb5-7074-4b88-a2c5-f3d8f141e3ad#/properties/person/properties/name/anyOf/0/properties/first/minProperties",
               "error": "The object has too few properties (minimum 2)"
             }
           ]
         },
         {
-          "instanceLocation": "/something/name",
-          "keywordLocation": "/properties/something/properties/name/anyOf/1/type",
-          "absoluteKeywordLocation": "urn:uuid:b8d652de-798d-4b97-94dc-3f39df4661bd#/properties/something/properties/name/anyOf/1/type",
-          "error": "The instance must be of type \"integer\""
+          "instanceLocation": "/person/name",
+          "keywordLocation": "/properties/person/properties/name/anyOf/1/type",
+          "absoluteKeywordLocation": "urn:uuid:f8d02fb5-7074-4b88-a2c5-f3d8f141e3ad#/properties/person/properties/name/anyOf/1/type",
+          "error": "The instance must be of type \"string\""
         }
       ]
     }

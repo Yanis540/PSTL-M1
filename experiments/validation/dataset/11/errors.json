@@ -2,41 +2,41 @@
   "valid": false,
   "instanceLocation": "",
   "keywordLocation": "",
-  "absoluteKeywordLocation": "urn:uuid:d860793c-b6c3-4886-8c8d-08ad9b974211#",
+  "absoluteKeywordLocation": "urn:uuid:f0fe9a4c-a340-4ee6-929c-6b54385eba3d#",
   "errors": [
     {
       "instanceLocation": "",
       "keywordLocation": "/items",
-      "absoluteKeywordLocation": "urn:uuid:d860793c-b6c3-4886-8c8d-08ad9b974211#/items",
+      "absoluteKeywordLocation": "urn:uuid:f0fe9a4c-a340-4ee6-929c-6b54385eba3d#/items",
       "errors": [
         {
           "instanceLocation": "/0",
           "keywordLocation": "/items/items",
-          "absoluteKeywordLocation": "urn:uuid:d860793c-b6c3-4886-8c8d-08ad9b974211#/items/items",
+          "absoluteKeywordLocation": "urn:uuid:f0fe9a4c-a340-4ee6-929c-6b54385eba3d#/items/items",
           "error": "The instance is disallowed by a boolean false schema"
         },
         {
           "instanceLocation": "/1",
           "keywordLocation": "/items/items",
-          "absoluteKeywordLocation": "urn:uuid:d860793c-b6c3-4886-8c8d-08ad9b974211#/items/items",
+          "absoluteKeywordLocation": "urn:uuid:f0fe9a4c-a340-4ee6-929c-6b54385eba3d#/items/items",
           "error": "The instance is disallowed by a boolean false schema"
         },
         {
           "instanceLocation": "/2",
           "keywordLocation": "/items/items",
-          "absoluteKeywordLocation": "urn:uuid:d860793c-b6c3-4886-8c8d-08ad9b974211#/items/items",
+          "absoluteKeywordLocation": "urn:uuid:f0fe9a4c-a340-4ee6-929c-6b54385eba3d#/items/items",
           "error": "The instance is disallowed by a boolean false schema"
         },
         {
           "instanceLocation": "/3",
           "keywordLocation": "/items/items",
-          "absoluteKeywordLocation": "urn:uuid:d860793c-b6c3-4886-8c8d-08ad9b974211#/items/items",
+          "absoluteKeywordLocation": "urn:uuid:f0fe9a4c-a340-4ee6-929c-6b54385eba3d#/items/items",
           "error": "The instance is disallowed by a boolean false schema"
         },
         {
           "instanceLocation": "/4",
           "keywordLocation": "/items/items",
-          "absoluteKeywordLocation": "urn:uuid:d860793c-b6c3-4886-8c8d-08ad9b974211#/items/items",
+          "absoluteKeywordLocation": "urn:uuid:f0fe9a4c-a340-4ee6-929c-6b54385eba3d#/items/items",
           "error": "The instance is disallowed by a boolean false schema"
         }
       ]
