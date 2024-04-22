@@ -1,7 +1,7 @@
 import { Draft07, Draft, JsonError } from "json-schema-library";
 
-import myJsonSchema from "./validator/json-schema.json";
-import myData from "./validator/data.json";
+import myJsonSchema from "./data/1/json-schema.json";
+import myData from "./data/1/data.json";
 import jsf, { type Schema } from 'json-schema-faker';
 // Function to correct invalid data based on schema and validation errors
 function correctInvalidData(schema: Draft, invalidData: any, validationErrors: JsonError[]): any {
