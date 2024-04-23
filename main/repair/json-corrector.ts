@@ -1,7 +1,7 @@
 import { Draft07, Draft, JsonError } from "json-schema-library";
 
-import myJsonSchema from "./data/1/json-schema.json";
-import myData from "./data/1/data.json";
+import myJsonSchema from "./data/4/json-schema.json";
+import myData from "./data/4/data.json";
 import jsf, { type Schema } from 'json-schema-faker';
 // Function to correct invalid data based on schema and validation errors
 function correctInvalidData(schema: Draft, invalidData: any, validationErrors: JsonError[]): any {
@@ -46,8 +46,24 @@ function correctInvalidData(schema: Draft, invalidData: any, validationErrors: J
             }
         }
         if(error.name =="AnyOfError"){
-            // 
+            // choisir le premier schema 
             const selectedSchema = errorSchema.anyOf[0]; 
+            const subSchema = new Draft07(selectedSchema);
+            const subSchemaErrors: JsonError[] = subSchema.validate(myData);
+            
+            const correctedSubSchema = correctInvalidData(subSchema, myData, subSchemaErrors);
+            currentObject = {...currentObject,...correctedSubSchema}
+            if (lastKey === '') {
+                Object.assign(parentObject, correctedSubSchema);
+            } else {
+                Object.assign(parentObject[lastKey], correctedSubSchema);
+
+            }
+        
+        }
+        if(error.name =="OneOfError"){
+            // choisir le premier schema 
+            const selectedSchema = errorSchema.oneOf[0]; 
             const subSchema = new Draft07(selectedSchema);
             const subSchemaErrors: JsonError[] = subSchema.validate(myData);
             

@@ -1,0 +1,38 @@
+{
+
+    "description": "Cool! We got a string here!",
+    "oneOf":[
+        {
+            "type": "object",
+            "required":["a"],
+            "properties":{
+
+                "a":{
+                    "type":"number", 
+                    
+                    "multipleOf":3,
+                    "minimum":11 
+                }
+            }
+        },
+        {
+            "type": "object",
+            "required":["b"],
+            "properties":{
+                "b":{
+                    "type":"array",
+                    "items":{
+                        "type":"object",
+                        "properties":{
+                            "c":{"type":"number"}
+                        },
+                        "required":["c"]
+                    }
+                }
+            }
+        }
+        
+    ]
+            
+
+}
