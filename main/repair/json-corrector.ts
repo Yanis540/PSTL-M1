@@ -1,7 +1,7 @@
 import { Draft07, Draft, JsonError } from "json-schema-library";
 
-import myJsonSchema from "./data/4/json-schema.json";
-import myData from "./data/4/data.json";
+import myJsonSchema from "./data/6/json-schema.json";
+import myData from "./data/6/data.json";
 import jsf, { type Schema } from 'json-schema-faker';
 // Function to correct invalid data based on schema and validation errors
 function correctInvalidData(schema: Draft, invalidData: any, validationErrors: JsonError[]): any {
@@ -82,6 +82,8 @@ function correctInvalidData(schema: Draft, invalidData: any, validationErrors: J
 }
 
 function generateFakerValue(schema: Schema): any {
+    if(!schema)
+        return null 
     switch (schema.type){
         case "string": {
             return jsf.generate({...schema,type:"string"});
