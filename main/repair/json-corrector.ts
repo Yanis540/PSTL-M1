@@ -1,12 +1,11 @@
 import { Draft07, Draft, JsonError } from "json-schema-library";
 
-import myJsonSchema from "./data/6/json-schema.json";
-import myData from "./data/6/data.json";
+import myJsonSchema from "./data/7/json-schema.json";
+import myData from "./data/7/data.json";
 import jsf, { type Schema } from 'json-schema-faker';
 // Function to correct invalid data based on schema and validation errors
 function correctInvalidData(schema: Draft, invalidData: any, validationErrors: JsonError[]): any {
-    let correctedData = { ...invalidData };
-    // console.log(validationErrors)
+    let correctedData = Array.isArray(invalidData)? invalidData : { ...invalidData };
     validationErrors.forEach((error) => {
         const { pointer, schema: errorSchema, value, received, expected } = error.data;
         // Splitting the pointer to navigate the data object
@@ -34,11 +33,16 @@ function correctInvalidData(schema: Draft, invalidData: any, validationErrors: J
         }
         // Handle different error types
         if (error.name === "TypeError" || error.name == "MultipleOfError" || error.name == "MinimumError") {
-            //  console.log("here",error.name,lastKey,errorSchema)
             const value = generateFakerValue(errorSchema);
-            parentObject[lastKey] = value
+            if (lastKey !== '' && typeof parentObject[lastKey] === 'object') {
+                Object.assign(parentObject[lastKey], value);
+            } else {
+                if(lastKey!="")
+                    parentObject[lastKey] = value;
+                else 
+                    correctedData = value
+            }
         }
-
         if (error.name === "RequiredPropertyError") {
             const missingProperty = error.data.key;
             if (errorSchema.type === "object" && !currentObject[missingProperty as any]) {
@@ -51,31 +55,51 @@ function correctInvalidData(schema: Draft, invalidData: any, validationErrors: J
             const subSchema = new Draft07(selectedSchema);
             const subSchemaErrors: JsonError[] = subSchema.validate(myData);
             
-            const correctedSubSchema = correctInvalidData(subSchema, myData, subSchemaErrors);
-            currentObject = {...currentObject,...correctedSubSchema}
-            if (lastKey === '') {
-                Object.assign(parentObject, correctedSubSchema);
+            const correctedSubSchema = correctInvalidData(subSchema, currentObject, subSchemaErrors);
+            if (lastKey !== '' && typeof parentObject[lastKey] === 'object') {
+                if(schema.getSchema()!=undefined && schema.getSchema()!.type=='array')
+                    parentObject[lastKey] = correctedSubSchema
+                else 
+                    Object.assign(parentObject[lastKey], correctedSubSchema);
             } else {
-                Object.assign(parentObject[lastKey], correctedSubSchema);
-
+                if(lastKey!="")
+                    parentObject[lastKey] = correctedSubSchema;
+                else 
+                    correctedData = correctedSubSchema
             }
         
         }
         if(error.name =="OneOfError"){
             // choisir le premier schema 
-            const selectedSchema = errorSchema.oneOf[0]; 
+            const selectedSchema = errorSchema.oneOf[0]; // Sélectionnez le schéma correspondant à cet index
             const subSchema = new Draft07(selectedSchema);
-            const subSchemaErrors: JsonError[] = subSchema.validate(myData);
-            
-            const correctedSubSchema = correctInvalidData(subSchema, myData, subSchemaErrors);
-            currentObject = {...currentObject,...correctedSubSchema}
-            if (lastKey === '') {
-                Object.assign(parentObject, correctedSubSchema);
+            const subSchemaErrors: JsonError[] = subSchema.validate(currentObject); // Validez uniquement cet élément
+            const correctedSubSchema = correctInvalidData(subSchema, currentObject, subSchemaErrors);
+            if (lastKey !== '' && typeof parentObject[lastKey] === 'object') {
+                if(schema.getSchema()!=undefined && schema.getSchema()!.type=='array')
+                    parentObject[lastKey] = correctedSubSchema
+                else 
+                    Object.assign(parentObject[lastKey], correctedSubSchema);
             } else {
-                Object.assign(parentObject[lastKey], correctedSubSchema);
-
+                if(lastKey!="")
+                    parentObject[lastKey] = correctedSubSchema;
+                else 
+                    correctedData = correctedSubSchema
             }
+          
         
+        }
+        if (error.name === "AdditionalPropertiesError") {
+            const additionalProperties = error.data.additionalProperty as any;
+            // Check if the additional property is not required
+            if (!(additionalProperties in errorSchema.properties) || !errorSchema.required.includes(additionalProperties)) {
+                // Remove the additional property
+                if (lastKey === '') {
+                    delete parentObject[additionalProperties];
+                } else {
+                    delete parentObject[lastKey][additionalProperties];
+                }
+            }
         }
   });
   return correctedData;
@@ -113,8 +137,33 @@ function generateFakerValue(schema: Schema): any {
   
 
 
-const jsonSchema: Draft = new Draft07(myJsonSchema);
-const errors: JsonError[] = jsonSchema.validate(myData);
-const correctedData = correctInvalidData(jsonSchema, myData, errors);
 
-console.log("Corrected Data:", correctedData);
+
+
+function validate(schema:any){
+    const jsonSchema: Draft = new Draft07(schema);
+    const errors: JsonError[] = jsonSchema.validate(myData);
+    const correctedData = correctInvalidData(jsonSchema, myData, errors);
+    const correctedErrors : JsonError[] = jsonSchema.validate(correctedData)
+    return {data:correctedData,isValid:correctedErrors.length === 0 }
+}
+const MAX_ATTEMPTS = 2; 
+
+function validateMaxAttemptsSchema(schema:any){
+    let attempts =0 ; 
+    let data:any,isValid:boolean=false;
+    while(attempts<MAX_ATTEMPTS){
+
+        const {data:d,isValid:v}= validate(schema);
+        data = d; 
+        isValid = v; 
+        if(isValid)
+            break
+        attempts ++
+    }
+    return {data:data,isValid:isValid}
+}
+
+const {data,isValid}=validateMaxAttemptsSchema(myJsonSchema)
+console.log("Corrected data : ",data)
+console.log("Is valid : ",isValid)
