@@ -96,4 +96,11 @@ todo        -   le gros soucis c'est l'opérateur :  not et allOf, y'a des techn
 ?       -   Types
 ?       -   Required 
 
+
+!   Rapport : 
+?       -   dire que pour le oneOf / anyOf on choisi le sous schéma dont la distance d'édition est minimale 
+?       -   MaxProperties : écrire comment est ce qu'on devrait le corriger 
+
+
+
 */
