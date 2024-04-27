@@ -1,12 +1,13 @@
 import { Draft07, Draft, JsonError } from "json-schema-library";
 
-import myJsonSchema from "./data/7/json-schema.json";
-import myData from "./data/7/data.json";
+import myJsonSchema from "./data/8/json-schema.json";
+import myData from "./data/8/data.json";
 import jsf, { type Schema } from 'json-schema-faker';
 // Function to correct invalid data based on schema and validation errors
 function correctInvalidData(schema: Draft, invalidData: any, validationErrors: JsonError[]): any {
     let correctedData = Array.isArray(invalidData)? invalidData : { ...invalidData };
-    validationErrors.forEach((error) => {
+    console.log(validationErrors?.length)
+    validationErrors?.forEach((error) => {
         const { pointer, schema: errorSchema, value, received, expected } = error.data;
         // Splitting the pointer to navigate the data object
         const path = pointer.substring(2).split('/');
@@ -32,9 +33,11 @@ function correctInvalidData(schema: Draft, invalidData: any, validationErrors: J
             }
         }
         // Handle different error types
+        console.log(error.name)
         if (error.name === "TypeError" || error.name == "MultipleOfError" || error.name == "MinimumError") {
             const value = generateFakerValue(errorSchema);
-            if (lastKey !== '' && typeof parentObject[lastKey] === 'object') {
+            if (lastKey !== '' && parentObject && typeof parentObject[lastKey] === 'object') {
+                console.log(parentObject[lastKey])
                 Object.assign(parentObject[lastKey], value);
             } else {
                 if(lastKey!="")
@@ -89,15 +92,15 @@ function correctInvalidData(schema: Draft, invalidData: any, validationErrors: J
           
         
         }
-        if (error.name === "AdditionalPropertiesError") {
-            const additionalProperties = error.data.additionalProperty as any;
+        if (error.name === "NoAdditionalPropertiesError") {
+            const additionalProperty = error.data.property as any;
             // Check if the additional property is not required
-            if (!(additionalProperties in errorSchema.properties) || !errorSchema.required.includes(additionalProperties)) {
+            if (!(additionalProperty in errorSchema.properties) || !errorSchema.required.includes(additionalProperty)) {
                 // Remove the additional property
                 if (lastKey === '') {
-                    delete parentObject[additionalProperties];
+                    delete parentObject[additionalProperty];
                 } else {
-                    delete parentObject[lastKey][additionalProperties];
+                    delete parentObject[lastKey][additionalProperty];
                 }
             }
         }

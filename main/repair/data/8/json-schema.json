@@ -6,9 +6,6 @@
   "items": {
     "oneOf": [
       {
-        "type": "string"
-      },
-      {
         "type": "object",
         "properties": {
           "label": {
@@ -34,8 +31,10 @@
           "label"
         ],
         "additionalProperties": false
+      },
+      {
+        "type": "string"
       }
-      
     ]
   }
 }
