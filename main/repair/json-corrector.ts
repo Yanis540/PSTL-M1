@@ -1,12 +1,11 @@
 import { Draft07, Draft, JsonError } from "json-schema-library";
 
-import myJsonSchema from "./data/8/json-schema.json";
-import myData from "./data/8/data.json";
+import myJsonSchema from "./data/9/json-schema.json";
+import myData from "./data/9/data.json";
 import jsf, { type Schema } from 'json-schema-faker';
 // Function to correct invalid data based on schema and validation errors
 function correctInvalidData(schema: Draft, invalidData: any, validationErrors: JsonError[]): any {
     let correctedData = Array.isArray(invalidData)? invalidData : { ...invalidData };
-    console.log(validationErrors?.length)
     validationErrors?.forEach((error) => {
         const { pointer, schema: errorSchema, value, received, expected } = error.data;
         // Splitting the pointer to navigate the data object
@@ -33,12 +32,10 @@ function correctInvalidData(schema: Draft, invalidData: any, validationErrors: J
             }
         }
         // Handle different error types
-        console.log(error.name)
         if (error.name === "TypeError" || error.name == "MultipleOfError" || error.name == "MinimumError") {
             const value = generateFakerValue(errorSchema);
             if (lastKey !== '' && parentObject && typeof parentObject[lastKey] === 'object') {
-                console.log(parentObject[lastKey])
-                Object.assign(parentObject[lastKey], value);
+                parentObject[lastKey]= value;
             } else {
                 if(lastKey!="")
                     parentObject[lastKey] = value;
@@ -148,25 +145,28 @@ function validate(schema:any){
     const errors: JsonError[] = jsonSchema.validate(myData);
     const correctedData = correctInvalidData(jsonSchema, myData, errors);
     const correctedErrors : JsonError[] = jsonSchema.validate(correctedData)
-    return {data:correctedData,isValid:correctedErrors.length === 0 }
+    return {data:correctedData,isValid:correctedErrors.length === 0,errors:correctedErrors }
 }
 const MAX_ATTEMPTS = 2; 
 
 function validateMaxAttemptsSchema(schema:any){
     let attempts =0 ; 
-    let data:any,isValid:boolean=false;
+    let data:any,isValid:boolean=false,errors:any;
     while(attempts<MAX_ATTEMPTS){
 
-        const {data:d,isValid:v}= validate(schema);
+        const {data:d,isValid:v,errors:e}= validate(schema);
         data = d; 
+        errors = e; 
         isValid = v; 
         if(isValid)
             break
         attempts ++
     }
-    return {data:data,isValid:isValid}
+    return {data:data,isValid:isValid,errors}
 }
 
-const {data,isValid}=validateMaxAttemptsSchema(myJsonSchema)
+const {data,isValid,errors}=validateMaxAttemptsSchema(myJsonSchema)
 console.log("Corrected data : ",data)
 console.log("Is valid : ",isValid)
+if(!isValid)
+    console.log(errors)
