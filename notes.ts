@@ -101,6 +101,15 @@ todo        -   le gros soucis c'est l'opérateur :  not et allOf, y'a des techn
 ?       -   dire que pour le oneOf / anyOf on choisi le sous schéma dont la distance d'édition est minimale 
 ?       -   MaxProperties : écrire comment est ce qu'on devrait le corriger 
 
+!   Dans oneOf : dire qu'il peut être valide à un schéma à la fois, ou un seul  
+!   choisir une branche si aucun n'est valide, si il n'est pas valide à plusieurs alors on fait 
 
+!   Ajouter un schéma qu'on peut pas traiter,
+!   Ajouter un benchmark des erreurs, 
+!   clarifier de oneOf
+!   Conclusion perspectives : 
+!           transformer les schémas en forme DNF (disjonctive) : mais il reste le soucis de la négation 
+
+!   Perspectives => transformer la forme conjonctive vers une forme disjonctive 
 
 */
