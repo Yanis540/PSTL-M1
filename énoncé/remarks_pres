@@ -1,0 +1,65 @@
+Put slide numbers
+
+slide 1:
+	- fix right logo
+	- Encadrants instead of Sujet ...
+	- No need to put département ...
+	
+slide 2:
+	- no need of an animation when changing slides
+	- add e to proposé
+	- Existe-t-il ...?
+	- Quelles ...?
+	- change order of appearance (text above the box ...)
+	- concepts ===> contexte
+	- démarche à suivre ==> change to approche
+	- approche proposée ===> remove, no slide talking about this (previous one)
+	
+slide 6:
+	- The types' names and assertion in lowercase + the assertions are one word
+	
+slide 7:
+	- no need of an animation to show schéma and instance
+	
+slide 10:
+	- text after box ...
+	
+slide 11:
+	- same
+	
+slide 12:
+	- correct Modifiction : noeuds de T1 sont dans T2
+	
+slide 13:
+	- zoom out the figure ?
+	- Json ===> JSON
+	
+slide 14:
+	- instance : add s in the title
+	- remove point
+	
+slide 16:
+	- correct text of 1 (schémas, ... instances correctes et générées ?)
+	- lien entre les erreurs et la distance (ou lien entre erreurs et distance)
+	
+slide 20: 
+	- correct the title of the table ???
+	
+slide 23:
+	- correct : types assetions ? Boolean expressions ?
+	
+slide 24: 
+	- forme conjonctive
+	- no need for animation to show instance and schéma
+	
+slide 25:
+	- items disjontive ??
+	
+slide 26:
+	- résultats ??
+	
+slide 28:
+	- contrainte principale ...? No need to ?
+	- remove investissement ... ? (maybe reformulate)
+	- Souhait ...? Remove souhait, Analyse des erreurs directly
+	- une réparation plus complète .... : remove plus + just say remove the conjunction and negation
